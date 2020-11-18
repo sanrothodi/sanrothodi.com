@@ -1,0 +1,388 @@
+/*CSS Stylesheet*/
+
+/*Header*/
+body{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*Mobile viewport max 479px*/
+@media (max-width: 479px) {
+  /*Menu, social and bio*/
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0.5em;
+  padding-top: 1em;
+  align-items: center;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
+  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
+  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
+
+}
+
+.main-visual {
+  display: grid;
+  grid-template-columns: 7fr 3fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dropdown-icon{
+  display: hidden;
+  font-size: 1.7em;
+  cursor:pointer
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0em;
+}
+
+.dropdown-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(238,238,238, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.main-menu{
+  padding-top: 2em;
+  padding-left: 1.5em;
+}
+
+.main-menu-items {
+  display: block;
+  position: relative;
+  top: 25%;
+  width: 50%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #000000;
+  text-decoration: none;
+  padding: 1em;
+  transition: 0.3s;
+}
+
+.dropdown-menu a:hover, .dropdown-menu a:focus {
+  text-decoration: underline;
+  color: #8e8e8e;
+}
+
+.dropdown-menu .close-button {
+  position: absolute;
+  padding-top: 1em;
+  right: 1em;
+  font-size: 2em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.social-media{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1em;
+}
+
+.social-media-icons{
+  width: 1.5em;
+  display: inline;
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p{
+  font-size: 0.9em;
+}
+
+/*Portfolio*/
+.home-portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.5em;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.home-portfolio-grid{
+}
+
+.image-size{
+  width: 90%;
+  height: 90%;
+  padding: 0.5em;
+}
+
+
+/*Video*/
+.slider {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+ .home-video {
+ }
+
+
+/*Footer*/
+.before-footer{
+  padding: 1em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.5em;
+  background-color: #eeeeee
+}
+
+.footer-menu-items {
+  display: inline;
+  color: #202020;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.footer-menu-items:hover {
+  text-decoration: underline;
+  color: #8e8e8e;
+}
+
+.footer-social-media{
+  width: 100%;
+  display: inline;
+  text-align: right;
+}
+
+.footer-social-media-icons{
+  width: 1.2em;
+}
+
+.rights{
+  color: #202020;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.copyright{
+  color: #202020;
+  font-size: 0.8em;
+  text-align: right;
+}
+}
+
+
+
+
+
+
+
+/*Desktop viewport 480px*/
+
+@media (min-width: 480px) {
+
+  /*Menu, social and bio*/
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0.5em;
+  padding-top: 1em;
+  align-items: center;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
+  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
+  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
+
+}
+
+.main-visual {
+  display: grid;
+  grid-template-columns: 7fr 3fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.dropdown-icon{
+  padding-top: 0.2em;
+  padding-left: 1em;
+  font-size: 2em;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0.2em;
+}
+
+.dropdown-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(238,238,238, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.main-menu{
+  padding-top: 2em;
+  padding-left: 1.5em;
+}
+
+.main-menu-items {
+  display: block;
+  position: relative;
+  top: 25%;
+  width: 50%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #000000;
+  text-decoration: none;
+  padding: 1em;
+  transition: 0.3s;
+}
+
+.dropdown-menu a:hover, .dropdown-menu a:focus {
+  text-decoration: underline;
+  color: #8e8e8e;
+}
+
+.dropdown-menu .close-button {
+  position: absolute;
+  padding-top: 1em;
+  right: 1em;
+  font-size: 2em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.social-media{
+  padding-top: 1em;
+  padding-right: 4em;
+  text-align: right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1em;
+}
+
+.social-media-icons{
+  width: 1.5em;
+  display: inline;
+  text-align: right;
+}
+
+.blank-space {
+  height: 7em;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding-left: 1em;
+}
+
+p{
+  font-size: 1.5em;
+  padding-left: 1.8em;
+}
+
+/*Portfolio*/
+.home-portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1em;
+  padding-top: 2.5em;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.home-portfolio-grid{
+}
+
+.image-size{
+  width: 90%;
+  height: 90%;
+  padding: 0.5em;
+}
+
+
+/*Video*/
+.slider {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+ .home-video {
+ }
+
+
+/*Footer*/
+.before-footer{
+  padding: 2em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5em;
+  background-color: #eeeeee;
+}
+
+.footer-menu{
+  padding-left: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footer-menu-items {
+  display: inline-block;
+  color: #202020;
+  font-size: 0.8em;
+  text-align: left;
+  padding: 1em;
+  padding-left: 2em;
+}
+
+.footer-menu-items:hover {
+  text-decoration: underline;
+  color: #8e8e8e;
+}
+
+.footer-social-media{
+  width: 100%;
+  display: inline;
+  text-align: right;
+  padding: 1em;
+  padding-right: 2em;
+}
+
+.footer-social-media-icons{
+  width: 1.5em;
+  padding-right: 2em;
+}
+
+.copyright{
+  color: #202020;
+  font-size: 0.8em;
+  text-align: right;
+  vertical-align: bottom;
+}
+}
