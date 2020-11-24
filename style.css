@@ -138,6 +138,13 @@ img {
 .desktop-menu-items {
 }
 
+.carousel {
+   max-height: 40em;
+}
+
+.carousel-inner {
+    max-height: 40em;
+}
 
 /*Portfolio*/
 .home-portfolio {
