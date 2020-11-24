@@ -42,10 +42,10 @@ img {
   padding-top: 1em;
   align-items: center;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
-  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
-  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
-  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/image-08.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/image-08.jpg');
+  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/image-08.jpg');
+  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/image-08.jpg');
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/image-08.jpg');
 }
 
 .container-topbar{
@@ -405,7 +405,7 @@ img {
   grid-template-columns: 1fr;
   align-items: center;
   background-size: cover;
-  background-image: url('https://sanrothodi.com/assets/home/image-08.jpg');
+  background-image: url('assets/image-08.jpg');
 }
 
 .videography-grid:nth-child(1) {
@@ -478,10 +478,10 @@ p{
   padding-top: 1em;
   align-items: center;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
-  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
-  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
-  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('https://sanrothodi.com/assets/home/welcome-image.jpg');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/welcome-image.jpg');
+  background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/welcome-image.jpg');
+  background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/welcome-image.jpg');
+  background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.5)), url('assets/welcome-image.jpg');
 }
 
 .container-topbar{
@@ -881,7 +881,7 @@ color: #8e8e8e;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   background-size: cover;
-  background-image: url('https://sanrothodi.com/assets/home/image-08.jpg');
+  background-image: url('assets/image-08.jpg');
 }
 
 .videography-grid {
