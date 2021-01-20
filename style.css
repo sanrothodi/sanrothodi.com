@@ -61,7 +61,6 @@ img {
 .main-visual {
   display: grid;
   grid-template-columns: 7fr 3fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .dropdown-icon{
@@ -132,7 +131,7 @@ img {
 }
 
 .desktop-menu {
-  
+
 }
 
 .desktop-menu-items {
