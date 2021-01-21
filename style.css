@@ -35,7 +35,7 @@ img {
   max-width: 250px;
   margin-right: 2%;
   border-right: 1px solid #000000;
-  background: #999999;
+  background: #000000;
   position: fixed;
   overflow: scroll;
   padding: 4% 5% 0 3%;
@@ -44,8 +44,8 @@ img {
 }
 
 .gallery-content {
-  margin-left: 300px;
   display: flex;
+  margin-left: 300px;
   padding-top: 100px;
 }
 
@@ -55,18 +55,19 @@ img {
 
 .social-media {
   width: 100%;
+  color: #999999;
 }
 
 .social-icon-link{
-  color: #999999;
   text-decoration: none;
+  color: #999999;
 }
 
 .social-icon{
-  width: 10em;
   display: inline;
   text-align: left;
   padding: 1em;
+  width: 10em;
   color: #999999;
 }
 
