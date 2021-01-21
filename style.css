@@ -49,6 +49,51 @@ img {
   padding-top: 100px;
 }
 
+.social-icon{
+  width: 100%;
+  display: inline;
+  text-align: right;
+  padding: 1em;
+  padding-right: 2em;
+  color: #999999;
+}
+
+
+  .social-media {
+    width: 100%;
+    display: inline;
+    text-align: right;
+    padding: 1em;
+    padding-right: 2em;
+  }
+
+  .social-media-icons {
+    width: 1.5em;
+    padding-right: 2em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Mobile viewport max 479px*/
 @media (max-width: 479px) {
   h1 {
