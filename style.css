@@ -49,6 +49,10 @@ img {
   padding-top: 100px;
 }
 
+.text-color {
+  color: #999999;
+}
+
 .social-icon{
   width: 100%;
   display: inline;
@@ -57,6 +61,13 @@ img {
   padding-right: 2em;
   color: #999999;
 }
+
+.social-icon-link{
+  color: #999999;
+  text-decoration: none;
+}
+
+
 
 
   .social-media {
