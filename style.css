@@ -54,7 +54,8 @@ img {
 }
 
 .social-media {
-  max-height: 20px;
+  max-height: 30px;
+  width: 100%;
 }
 
 .social-icon-link{
@@ -63,7 +64,7 @@ img {
 }
 
 .social-icon{
-  width: 1em;
+  width: 10em;
   display: inline;
   text-align: left;
   padding: 1em;
