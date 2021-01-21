@@ -55,10 +55,11 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
 }
 
 /*Sidebar*/
-.header-content {
+.header {
   flex: auto;
   float: left;
   height: 100%;
@@ -73,10 +74,14 @@ img {
   top: 0;
 }
 
+.header-content {
+  z-index: 1;
+}
+
 .logo {
   color: #ffffff;
   font-size: 1.8em;
-  text-shadow: 0 0 8px #fff;
+  text-shadow: 0 0 8px #ffffff;
 }
 
 .professional {
@@ -109,9 +114,7 @@ img {
   bottom: -2px;
   background: #ffffff;
   height: 2px;
-  transition-property: width;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-out;
+  transition: width 0.4s ease-in-out 0.05s;
   z-index: 999;
 }
 
@@ -165,10 +168,8 @@ img {
   width: 0;
   bottom: -2px;
   background: #ffffff;
-  height: 2px;
-  transition-property: width;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-out;
+  height: 1.4px;
+  transition: width 0.4s ease-in-out 0.05s;
   z-index: 999;
 }
 
@@ -191,7 +192,25 @@ img {
 
 .gallery-content {
   display: flex;
-  padding: 8em 1em 0 ;
+  padding: 8em 2em 0 20em;
   height: 100%;
   background: #000000;
+}
+
+.portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  transition: width 0.4s ease-in-out 0.05s;
+}
+
+.portfolio-grid {
+  object-fit: cover;
+}
+
+.image-size {
+  width: auto;
+  max-width: 18em;
+  padding-left: 1em;
+  padding-bottom: 1em;
 }
