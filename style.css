@@ -60,13 +60,13 @@ img {
   flex: auto;
   float: left;
   height: 100%;
-  max-width: 300px;
-  margin-right: 2%;
+  max-width: 230px;
+  margin-right: 1%;
   border-right: 1px solid #000000;
   background: #000000;
   position: fixed;
   overflow: scroll;
-  padding: 4% 1% 0 3%;
+  padding: 4em 2em 0 2.5em;
   left: 0;
   top: 0;
 }
@@ -144,9 +144,14 @@ img {
   fill: #999999;
 }
 
+.footer {
+  padding-top: 1em;
+}
+
 .contact{
   display: inline-block;
   font-size: 0.8em;
+  line-height: 1.3em;
 }
 
 .contact-email {
@@ -188,8 +193,7 @@ img {
 
 .gallery-content {
   display: flex;
-  margin-left: 300px;
-  padding-top: 100px;
+  padding: 8em 1em 0 ;
   height: 100%;
   background: #000000;
 }
