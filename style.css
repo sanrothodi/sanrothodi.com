@@ -44,8 +44,8 @@ img {
 }
 
 .gallery-content {
-  display: none;
   margin-left: 300px;
+  display: flex;
   padding-top: 100px;
 }
 
