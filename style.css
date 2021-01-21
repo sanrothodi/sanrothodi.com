@@ -37,7 +37,7 @@ img {
   border-right: 1px solid #000000;
   background: #000000;
   position: fixed;
-  overflow: auto;
+  overflow: scroll;
   padding: 4% 5% 0 3%;
   left: 0;
   top: 0;
