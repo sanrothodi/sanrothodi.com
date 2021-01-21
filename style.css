@@ -36,6 +36,10 @@ a:hover:after {
   transform-origin:0 50%;
 }*/
 
+h1 {
+
+}
+
 p {
   color: #999999;
 }
@@ -62,15 +66,14 @@ img {
 .header-content {
   flex: auto;
   float: left;
-  width: 30%;
   height: 100%;
-  max-width: 280px;
+  max-width: 300px;
   margin-right: 2%;
   border-right: 1px solid #000000;
   background: #000000;
   position: fixed;
   overflow: scroll;
-  padding: 4% 5% 0 3%;
+  padding: 4% 1% 0 3%;
   left: 0;
   top: 0;
 }
@@ -81,13 +84,16 @@ img {
 }
 
 .desktop-menu{
-  padding-top: 3rem;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .menu-items {
+  display: block;
+  padding-left: 0.8em;
+  padding-bottom: 0.7em;
   font-family: "Telefon Normal", "Telefon Normal", sans-serif;
   font-size: 0.9em;
-  padding-left: 1.5em;
   text-decoration: none;
   cursor: pointer;
 }
@@ -117,14 +123,13 @@ img {
 
 .social-media {
   display: inline;
-  width: 100%;
+  padding-bottom: 2em;
   color: #999999;
 
 }
 
 .social-icon-link{
   text-decoration: none;
-  color: #999999;
 }
 
 .social-icon{
