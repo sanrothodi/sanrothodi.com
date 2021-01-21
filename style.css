@@ -28,11 +28,11 @@ img {
 }
 
 .header-content {
-  width: 30%;
-  max-width: 250px;
-  padding: 0% 0 0% 5%;
+  flex:auto;
   float: left;
-  height: inherit;
+  width: 30%;
+  height: 100%;
+  max-width: 250px;
   margin-right: 2%;
   border-right: 1px solid #000000;
   background: #000000;
