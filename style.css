@@ -18,6 +18,23 @@ img {
   vertical-align: middle;
 }
 
+
+.header-content {
+width: 30%;
+max-width: 250px;
+padding: 0% 0 0% 5%;
+float: left;
+height: inherit;
+margin-right: 2%;
+border-right: 1px solid #000000;
+background: #000000;
+position: fixed;
+overflow: auto;
+padding: 4% 5% 0 3%;
+left: 0;
+top: 0;
+}
+
 /*Mobile viewport max 479px*/
 @media (max-width: 479px) {
   h1 {
