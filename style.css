@@ -34,7 +34,7 @@ img {
   }
 /*Home*/
 /*Header*/
-  /*Menu, social and bio*/
+  /*Menu, social and bio
 .container-home{
   display: grid;
   grid-template-columns: auto;
@@ -144,7 +144,7 @@ img {
 .carousel-inner {
     max-height: 10em;
 }
-
+*/
 /*Portfolio*/
 .home-portfolio {
   display: grid;
