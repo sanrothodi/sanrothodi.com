@@ -289,7 +289,7 @@ img {
 
 
 /*Photography*/
-/*Slideshow*/
+/*Slideshow
 .mySlides {
   display: none
 }
@@ -298,14 +298,14 @@ img {
   width: 100%;
 }
 
-/* Slideshow container */
+/* Slideshow container
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: 0em;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -333,7 +333,7 @@ img {
   background-color: rgba(0,0,0,0.5);
 }
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators
 .dot {
   cursor: pointer;
   height: 0.5em;
@@ -349,7 +349,7 @@ img {
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 0.8s;
@@ -477,7 +477,7 @@ p{
 }
 /*Home/
 /*Header*/
-  /*Menu, social and bio*/
+  /*Menu, social and bio
 .container-home{
   display: grid;
   grid-template-columns: auto;
@@ -762,7 +762,7 @@ color: #8e8e8e;
 }
 
 /*Photography*/
-/*Slideshow*/
+/*Slideshow
 .mySlides {
   display: none;
   text-align: center;
@@ -772,14 +772,14 @@ color: #8e8e8e;
   height: 50em;
 }
 
-/* Slideshow container */
+/* Slideshow container
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: 0em;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -810,7 +810,7 @@ color: #8e8e8e;
   background-color: rgba(0,0,0,0.2);
 }
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators
 .dot {
   cursor: pointer;
   height: 0.5em;
@@ -826,7 +826,7 @@ color: #8e8e8e;
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 0.8s;
