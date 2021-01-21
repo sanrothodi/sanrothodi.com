@@ -45,7 +45,7 @@ img {
 
 .gallery-content {
   margin-left: 300px;
-  display: block;
+  display: flex;
   padding-top: 100px;
 }
 
