@@ -5,7 +5,8 @@ body {
   font-family: "Input Mono Narrow Regular", "Input Mono Narrow Regular", monospace;
   font-size: 16px;
   overflow-x: none;
-  position: relative;
+  /*position: relative;*/
+  position: sticky;
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -56,6 +57,7 @@ img {
   display: flex;
 }
 
+/*Sidebar*/
 .header-content {
   flex: auto;
   float: left;
@@ -82,10 +84,6 @@ img {
   text-shadow: none;
   animation: upper 10s cubic-bezier(.45,.05,.55,.95) infinite;
 }
-
-/* h1 span {
-  animation: upper 10s cubic-bezier(.45,.05,.55,.95) infinite;
-} */
 
 .desktop-menu {
   padding-top: 2.5em;
@@ -116,6 +114,7 @@ img {
   transition-timing-function: ease-out;
   z-index: 999;
 }
+
 .menu-items:hover:after,
 .menu-items:focus:after,
 .menu-items:active:after {
@@ -129,7 +128,6 @@ img {
   display: inline;
   padding-bottom: 2em;
   color: #999999;
-
 }
 
 .social-icon-link{
@@ -173,6 +171,7 @@ img {
   transition-timing-function: ease-out;
   z-index: 999;
 }
+
 .contact-email:hover:after,
 .contact-email:focus:after,
 .contact-email:active:after {
@@ -188,8 +187,7 @@ img {
 }
 
 
-
-
+/*Gallery*/
 
 .gallery-content {
   display: flex;
