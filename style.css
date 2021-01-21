@@ -54,15 +54,19 @@ img {
   color: #999999;
 }
 
-.social-icon{
-  width: 2em;
-  display: inline;
-  text-align: left;
-  padding: 1em;
-  color: #999999;
+.social-media {
+  max-height: 20px;
 }
 
 .social-icon-link{
   color: #999999;
   text-decoration: none;
+}
+
+.social-icon{
+  width: 1em;
+  display: inline;
+  text-align: left;
+  padding: 1em;
+  color: #999999;
 }
