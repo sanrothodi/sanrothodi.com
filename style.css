@@ -82,11 +82,16 @@ img {
 .logo {
   color: #ffffff;
   font-size: 1.8em;
+  text-shadow: 0 0 8px #fff;
 }
 
 .professional {
   color: #999999;
+  text-shadow: none;
+  animation: upper 10s cubic-bezier(.45,.05,.55,.95) infinite;
 }
+
+
 
 .desktop-menu{
   padding-top: 3em;
