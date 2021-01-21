@@ -37,7 +37,8 @@ a:hover:after {
 }*/
 
 h1 {
-
+  font-family: input mono narrow regular,input mono narrow regular,monospace;
+  font-weight: 400;
 }
 
 p {
@@ -80,7 +81,11 @@ img {
 
 .logo {
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.8em;
+}
+
+.professional {
+  color: #999999;
 }
 
 .desktop-menu{
