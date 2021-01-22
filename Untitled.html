@@ -1,154 +1,172 @@
-<<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-
-
-
-
-    <style>
-      .back{
-        background-color: #000;
-      }
-
-      .menu-items {
-        display: inline;
-        position: relative;
-        overflow: hidden;
-        padding-left: 0.8em;
-        padding-bottom: 0.7em;
-        font-family: "Telefon Normal", "Telefon Normal", sans-serif;
-        font-size: 0.9em;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-      .menu-items:hover {
-       color: #ffffff;
-      }
-      .menu-items:after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        right: 0;
-        width: 0;
-        bottom: -2px;
-        background: #ffffff;
-        height: 2px;
-        transition: width 0.4s ease-out;
-        z-index: 1;
-      }
-      .menu-items:hover:after,
-      .menu-items:focus:after,
-      .menu-items:active:after {
-        color: #ffffff;
-        left: 0;
-        right: auto;
-        width: 100%;
-      }
-
-
-      html,body{
-        display: grid;
-        height: 100%;
-        place-items: center;
-        background: #000;
-      }
-
-      .social-icon {
-        padding: 0;
-        width: 1.8em;
-        height: 2.2em;
-        fill: #999999;
-      }
-
-      .social-icon:hover {
-        padding: 0;
-        fill: #ffffff;
-      }
-
-      li a svg:hover{
-        position: relative;
-        height: 125px;
-        width: 125px;
-        display: inline;
-        border: 1px solid rgba(255,255,255,0.2);
-        border-radius: 50%;
-        border-left-color: #5cb85c;
-        animation: rotate 1.2s linear;
-      }
-      @keyframes rotate {
-        50%{
-          border-left-color: #9b59b6;
-        }
-        75%{
-          border-left-color: #e67e22;
-        }
-        100%{
-          transform: rotate(360deg);
-        }
-      }
-
-
-
-
-
-    </style>
-  </head>
-  <body>
-    <div class="back">
-    <p>hello, link is <a href="#" class="menu-items">underline</a>
-    </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    </div>
-
-
-    <li><a> <svg><path>
-
-    </path></svg></a>
-
-    <li><a class="social-icon-link" href="http://twitter.com/sanrothodi" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -150 1000 1000" class="social-icon">
-          <path fill="text-color"
-            d="M904 228q-37 54-90 93v23q0 73-21 145t-64 139-103 117-144 82-181 30q-151 0-276-81 19 3 43 3 126 0 224-77-59-2-105-36t-64-89q19 2 34 2 24 0 48-6-63-13-104-62T60 396v-2q38 21 82 23-37-25-59-64t-22-86q0-49 25-91 68 83 164 133t208 55q-5-21-5-41 0-75 53-127t127-53q79 0 132 57 61-12 114-44-20 64-79 100 52-6 104-28z">
-          </path>
-        </svg>
-      </a>
-    </li>
-</li>
-
-
-  </body>
-</html>
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-div {
+body {
+
+background: #000;
+}
+
+p {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 1em;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.menu-items {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0.7em;
+  margin-right: 9em;
+  padding-bottom: 1em;
+  font-family: "Telefon Normal", "Telefon Normal", sans-serif;
+  font-size: 0.9em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-items:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  bottom: 0.5em;
+  background: #ffffff;
+  height: 2px;
+  transition: width 0.6s ease-in-out;
+}
+
+.menu-items:hover:after,
+.menu-items:focus:after,
+.menu-items:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.item-1:after {
+  background: #5999b6;
+}
+
+.item-1:hover {
+  color: #5999b6;
+}
+
+.item-2:after {
+  background: #5982b6;
+}
+
+.item-2:hover {
+  color: #5982b6;
+}
+
+.item-3:after {
+  background: #596bb6;
+}
+
+.item-3:hover {
+  color: #596bb6;
+}
+
+.item-4:after {
+  background: #5e59b6;
+}
+
+.item-4:hover {
+  color: #5e59b6;
+}
+
+.item-5:after {
+  background: #7559b6;
+}
+
+.item-5:hover {
+  color: #7559b6;
+}
+
+.item-6:after {
+  background: #8c59b6;
+}
+
+.item-6:hover {
+  color: #8c59b6;
+}
+
+.square {
+  position: relative;
   width: 200px;
   height: 100px;
-  border: 1px solid black;
+  border: 1px solid #fff;
 }
+
+.navbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+
+}
+
+.navbar-logo {
+
+}
+
+.navbar-menu > a {
+  display: block;
+  color
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.8em;
+  text-shadow: 0 0 15px #ffffff;
+}
+.professional {
+  color: #999999;
+  text-shadow: none;
+}
+
+
 </style>
 </head>
 <body>
 
-<div onmousemove="Overlay(event)" onmouseout="ClearOverlay()"></div>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <h1 class="logo">SANRO THODI<br /><span class="professional">PHOTOGRAPHY</span></h1>
+      </div>
+
+  </div>
+  <div class="navbar-menu">
+    <a href="https://sanrothodi.com/home" class="menu-items item-1">Home</a>
+    <a href="https://sanrothodi.com/product" class="menu-items item-2">Product</a>
+    <a href="https://sanrothodi.com/portrait" class="menu-items item-3">Portrait</a>
+    <a href="https://sanrothodi.com/contact" class="menu-items item-4">Landscape</a>
+    <a href="https://sanrothodi.com/contact" class="menu-items item-5">Contact</a>
+    <a href="https://sanrothodi.com/about" class="menu-items item-6">About</a>
+  </div>
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="square" onmousemove="Overlay(event)" onmouseout="ClearOverlay()"></div>
 
 <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
 
