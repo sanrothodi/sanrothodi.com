@@ -1,0 +1,69 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+
+
+    <style>
+      .back{
+        background-color: #000;
+      }
+
+      .menu-items {
+        display: inline;
+        position: relative;
+        overflow: hidden;
+        padding-left: 0.8em;
+        padding-bottom: 0.7em;
+        font-family: "Telefon Normal", "Telefon Normal", sans-serif;
+        font-size: 0.9em;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .menu-items:hover {
+       color: #ffffff;
+      }
+      .menu-items:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        width: 0;
+        bottom: -2px;
+        background: #ffffff;
+        height: 2px;
+        transition: width 0.4s ease-out;
+        z-index: 1;
+      }
+      .menu-items:hover:after,
+      .menu-items:focus:after,
+      .menu-items:active:after {
+        color: #ffffff;
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="back">
+    <p>hello, link is <a href="#" class="menu-items">underline</a>
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+  </body>
+</html>
