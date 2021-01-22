@@ -63,15 +63,20 @@
         fill: #999999;
       }
 
+      .social-icon:hover {
+        padding: 0;
+        fill: #ffffff;
+      }
+
       li a svg:hover{
         position: relative;
         height: 125px;
         width: 125px;
-        display: inline-block;
-        border: 2px solid rgba(255,255,255,0.2);
+        display: inline;
+        border: 1px solid rgba(255,255,255,0.2);
         border-radius: 50%;
         border-left-color: #5cb85c;
-        animation: rotate 1.2s linear infinite;
+        animation: rotate 1.2s linear;
       }
       @keyframes rotate {
         50%{
@@ -124,4 +129,46 @@
 
 
   </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<div onmousemove="Overlay(event)" onmouseout="ClearOverlay()"></div>
+
+<p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+
+<p>When the mouse is moved over the div, the p element will display the horizontal and vertical coordinates of your mouse pointer, whose values are returned from the clientX and clientY properties on the
+MouseEvent object.</p>
+
+<p id="demo"></p>
+
+<script>
+function Overlay(e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  var coor = "Coordinates: (" + x + "," + y + ")";
+  document.getElementById("demo").innerHTML = coor;
+}
+
+function ClearOverlay() {
+  document.getElementByClassName("demo").innerHTML = "";
+}
+</script>
+
+</body>
 </html>
