@@ -137,11 +137,11 @@ img {
   color: #999999;
 }
 
-.social-icon-link{
+.social-icon-link {
   text-decoration: none;
 }
 
-.social-icon{
+.social-icon {
   text-align: left;
   padding: 0;
   width: 1.8em;
@@ -149,6 +149,66 @@ img {
   fill: #999999;
 }
 
+.social-icon:hover {
+  fill: #ffffff;
+}
+
+li a svg:hover {
+  position: relative;
+  height: 2em;
+  width: 2em;
+  display: inline-block;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  border-left-color: #5cb85c;
+  animation: rotate 1.2s linear infinite;
+  z-index: 999;
+}
+@keyframes rotate {
+  50%{
+    border-left-color: #9b59b6;
+  }
+  75%{
+    border-left-color: #e67e22;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+}
+
+
+/*
+@keyframes circle {
+	to { transform: rotate(1turn); }
+}
+div#redball {
+	animation: circle 2s infinite;
+}
+
+.social-icon:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: 0.5em;
+  background: #ffffff;
+  height: 2px;
+  transition: width 0.6s ease-in-out;
+  z-index: 999;
+}
+
+.social-icon:hover:after,
+.social-icon:focus:after,
+.social-icon:active:after {
+  color: #ffffff;
+  fill: #ffffff;
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+*/
 .footer {
   padding-top: 1em;
 }

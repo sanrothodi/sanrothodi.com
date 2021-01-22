@@ -48,6 +48,47 @@
         width: 100%;
       }
 
+
+      html,body{
+        display: grid;
+        height: 100%;
+        place-items: center;
+        background: #000;
+      }
+
+      .social-icon {
+        padding: 0;
+        width: 1.8em;
+        height: 2.2em;
+        fill: #999999;
+      }
+
+      li a svg:hover{
+        position: relative;
+        height: 125px;
+        width: 125px;
+        display: inline-block;
+        border: 2px solid rgba(255,255,255,0.2);
+        border-radius: 50%;
+        border-left-color: #5cb85c;
+        animation: rotate 1.2s linear infinite;
+      }
+      @keyframes rotate {
+        50%{
+          border-left-color: #9b59b6;
+        }
+        75%{
+          border-left-color: #e67e22;
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+      }
+
+
+
+
+
     </style>
   </head>
   <body>
@@ -65,5 +106,22 @@
     <br>
     <br>
     </div>
+
+
+    <li><a> <svg><path>
+
+    </path></svg></a>
+
+    <li><a class="social-icon-link" href="http://twitter.com/sanrothodi" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -150 1000 1000" class="social-icon">
+          <path fill="text-color"
+            d="M904 228q-37 54-90 93v23q0 73-21 145t-64 139-103 117-144 82-181 30q-151 0-276-81 19 3 43 3 126 0 224-77-59-2-105-36t-64-89q19 2 34 2 24 0 48-6-63-13-104-62T60 396v-2q38 21 82 23-37-25-59-64t-22-86q0-49 25-91 68 83 164 133t208 55q-5-21-5-41 0-75 53-127t127-53q79 0 132 57 61-12 114-44-20 64-79 100 52-6 104-28z">
+          </path>
+        </svg>
+      </a>
+    </li>
+</li>
+
+
   </body>
 </html>
