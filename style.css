@@ -1,7 +1,13 @@
 /*CSS Stylesheet*/
+:root {
+  --background: #00000;
+  --text: #999999;
+  --hover: #fffff;
+}
+
 body {
-  background: #000000;
-  color: #999999;
+  background: --background;
+  color: --text;
   font-family: "Input Mono Narrow Regular", "Input Mono Narrow Regular", monospace;
   font-size: 16px;
   overflow-x: none;
@@ -14,14 +20,14 @@ body {
 
 a {
   text-decoration: none;
-  color: #999999;
+  color: --text;
   font-size: 1em;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffffff;
-  fill: #ffffff;
+  color: --hover;
+  fill: --hover;
 }
 
 h1 {
@@ -30,7 +36,7 @@ h1 {
 }
 
 p {
-  color: #999999;
+  color: --text;
 }
 
 ul {
@@ -81,27 +87,27 @@ img {
 }
 
 .logo {
-  color: #ffffff;
+  color: --hover;
   font-size: 1.7em;
-  text-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px --hover;
   padding: 0.5em 0 0 1em;
 }
 
 .professional {
-  color: #999999;
+  color: --text;
   text-shadow: none;
 }
 
 .menu-icon {
   width: 1.8em;
   height: 1.8em;
-  fill: #999999;
+  fill: --text;
   padding-right: 3em;
   padding-top: 2.5em;
 }
 
 .menu-icon:hover {
-  fill: #ffffff;
+  fill: --hover;
 }
 
 .collapsible {
@@ -150,7 +156,7 @@ img {
   right: 0;
   width: 0;
   bottom: 0.5em;
-  background: #ffffff;
+  background: --hover;
   height: 2px;
   transition: width 0.6s ease-in-out;
 }
@@ -215,7 +221,7 @@ img {
   grid-column: col 3 / span 1;
   display: block;
   align-items: center;
-  color: #999999;
+  color: --text;
 }
 
 .social-menu {
@@ -239,12 +245,12 @@ img {
   padding-right: 0.5em;
   width: 1.8em;
   height: 2.2em;
-  fill: #999999;
+  fill: --text;
   margin-bottom: 1.7em;
 }
 
 .social-icon:hover {
-  fill: #ffffff;
+  fill: --hover;
 }
 
 .twitter:hover {
@@ -431,10 +437,15 @@ label.instagram-circle:hover {
     transform: rotate(720deg);
   }
 }
+
 .floating-footer {
   position: fixed;
   bottom: 20px;
   left: 20px;
+}
+.copyright {
+  display: inline-block;
+  font-size: 0.8em;
 }
 }
 
@@ -456,8 +467,7 @@ label.instagram-circle:hover {
   height: 100%;
   max-width: 230px;
   margin-right: 1%;
-  border-right: 1px solid #fff;
-  background: #000000;
+  background: --background;
   position: relative;
   overflow: none;
   padding: 4em 2.5em 0 2.5em;
@@ -470,13 +480,13 @@ label.instagram-circle:hover {
 }
 
 .logo {
-  color: #ffffff;
+  color: --hover;
   font-size: 1.8em;
-  text-shadow: 0 0 15px #ffffff;
+  text-shadow: 0 0 15px --hover;
 }
 
 .professional {
-  color: #999999;
+  color: --text;
   text-shadow: none;
 }
 
@@ -506,7 +516,7 @@ label.instagram-circle:hover {
   right: 0;
   width: 0;
   bottom: 0.5em;
-  background: #ffffff;
+  background: --hover;
   height: 2px;
   transition: width 0.6s ease-in-out;
 }
@@ -572,7 +582,7 @@ label.instagram-circle:hover {
   align-items: center;
   padding-top: 1em;
   padding-bottom: 2em;
-  color: #999999;
+  color: --text;
 }
 
 .social-icon-link {
@@ -585,12 +595,12 @@ label.instagram-circle:hover {
   padding-right: 0.5em;
   width: 1.8em;
   height: 2.2em;
-  fill: #999999;
+  fill: --text;
   margin-bottom: 2em;
 }
 
 .social-icon:hover {
-  fill: #ffffff;
+  fill: --hover;
 }
 
 .twitter:hover {
@@ -826,9 +836,9 @@ label.instagram-circle:hover {
 
 .gallery-content {
   display: flex;
-  padding: 8em 2em 0 20em;
+  padding: 8em 2em 0 0;
   height: 100%;
-  background: #000000;
+  background: --background;
 }
 /*
 .portfolio {
