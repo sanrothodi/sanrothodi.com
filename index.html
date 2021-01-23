@@ -36,7 +36,7 @@
   <meta name="twitter:creator" content="@sanrothodi" />
 </head>
 
-<body class="body">
+<body id="top" class="body">
 
   <!--Navbar-->
   <div class="navbar">
@@ -198,7 +198,7 @@
 
 
     <!--Grid-->
-    <div class="gallery-content">
+    <div  class="gallery-content">
 
       <div class="portfolio">
         <li class="portfolio-grid" onmousemove="Overlay(event)" onmouseout="ClearOverlay()><a href=" assets/image-01.jpg"><img src="assets/image-01.jpg" class="image-size" alt="" /></a></li>
@@ -222,9 +222,11 @@
       </div>
     </div>
   </div>
+  <button onclick="scrollToTop()">Scroll to the top of the element</button>
   <div class="floating-footer copyright">2021 © Sanro Thodi</div>
 
   <script>
+  //Collapsible
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
@@ -238,6 +240,13 @@
           content.style.maxHeight = content.scrollHeight + "px";
         }
       });
+    }
+
+  //Scroll up
+    var elmnt = document.getElementById("top");
+
+    function scrollToTop() {
+      elmnt.scrollIntoView(true);
     }
   </script>
 </body>
