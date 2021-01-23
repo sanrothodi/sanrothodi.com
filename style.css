@@ -877,3 +877,12 @@ label.instagram-circle:hover {
 */
 
 /*Lightbox*/
+
+.scrollup {
+  position: absolute;
+  bottom: 30px;
+  left: 20;
+  background: var(--white);
+  border-color: var(--white);
+  border-radius: 3em;
+}
