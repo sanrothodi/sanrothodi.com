@@ -3,6 +3,13 @@
 <head>
     <script type="text/javascript" src="scripts.js"></script>
 <style>
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #999999;
+}
+
 body {
   background: #000000;
   color: #999999;
@@ -159,8 +166,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 890px) {
-
-
 .navbar {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -197,11 +202,33 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.scrollup {
+  position: relative;
+  justify-content: center;
+  max-height: 2.5em;
+  max-width: 2.5em;
+  margin: 1em;
+  background: var(--white);
+  border-color: var(--white);
+  border-radius: 50%;
+  fill: var(--grey);
+}
+
+.scrollup:hover {
+  cursor: pointer;
+  fill: var(--black);
+}
+
 }
 
 </style>
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="scrollup" viewBox="0 -2.5 16 22">
+    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+  </svg>
+
 
   <div class="navbar">
     <div class="navbar-logo">
@@ -243,7 +270,7 @@ MouseEvent object.</p>
 
 
 <!--Arrow up icon-->
-<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="menu-icon" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="scrollup" viewBox="0 -2.5 16 22">
   <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
 </svg>
 
