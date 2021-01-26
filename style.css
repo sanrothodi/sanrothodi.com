@@ -448,7 +448,7 @@ label.instagram-circle:hover {
   display: none;
 }
 
-@media screen and (min-width: 941px) {
+@media only screen and (min-width: 981px) {
 .navbar {
   display: none;
 }
@@ -885,7 +885,7 @@ label.instagram-circle:hover {
 */
 .portfolio {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-around;
   position: relative;
 }
@@ -896,7 +896,7 @@ label.instagram-circle:hover {
   height: 100%;
 }
 
-@media screen and (max-width:940px) {
+@media only screen and (max-width:980px) {
 .portfolio-grid {
   max-width: 100%;
   max-height: 100%;
@@ -934,7 +934,7 @@ label.instagram-circle:hover {
 */
 
 
-@media screen and (min-width: 941px) {
+@media screen and (min-width: 981px) {
 
 .gallery-content {
   display: flex;
