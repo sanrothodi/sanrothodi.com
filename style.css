@@ -65,7 +65,6 @@ img {
 
 /*Navbar*/
 
-@media screen and (max-width: 940px) {
 .navbar {
   display: grid;
   grid-template-columns: [col] 1fr [col] 1fr [col] 1fr;
@@ -442,7 +441,6 @@ label.instagram-circle:hover {
 .copyright {
   display: block;
   font-size: 0.8em;
-}
 }
 
 
