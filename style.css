@@ -57,12 +57,6 @@ img {
   vertical-align: middle;
 }
 
-.website-warp {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 /*Navbar*/
 
 .navbar {
@@ -443,15 +437,18 @@ label.instagram-circle:hover {
   font-size: 0.8em;
 }
 
-
-
 /*Sidebar*/
+.website-warp {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .header {
   display: none;
 }
 
-@media screen and (min-width: 941px) {
+@media and screen and (min-width: 941px) {
 .navbar {
   display: none;
 }
