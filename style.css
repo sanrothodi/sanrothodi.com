@@ -448,7 +448,7 @@ label.instagram-circle:hover {
   display: none;
 }
 
-@media and screen and (min-width: 941px) {
+@media screen and (min-width: 941px) {
 .navbar {
   display: none;
 }
@@ -904,11 +904,6 @@ label.instagram-circle:hover {
   object-fit: contain;
 }
 
-.image-size {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
 }
 /*
 @media screen and (min-width: 641px and max-width:940px) {
