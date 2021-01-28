@@ -983,3 +983,74 @@ label.instagram-circle:hover {
 
 
 /*Lightbox*/
+
+
+
+
+
+
+/*Contact*/
+  .contact-form {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 28em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .name-sidebyside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 1em;
+    align-items: center;
+  }
+
+  .form-name {
+    color: #000000;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    padding: 0.8em;
+  }
+
+  .name-fields {
+    padding: 0.5em;
+    width: 80%;
+  }
+
+  .other-fields {
+    padding: 0.5em;
+    width: 90%;
+  }
+
+  .other-fields-message {
+    padding: 0.5em;
+    width: 90%;
+    height: 12em;
+    background-color: transparent;
+    color: #000000;
+    border-color: #d3d3d3;
+    border-style: solid;
+    resize: none;
+  }
+
+  .rest-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding-left: 1em;
+  }
+
+  .submit-button-position {
+    padding: 1em;
+    width: 100%;
+  }
+
+  .submit-button {
+    height: 2em;
+    width: 5em;
+    background-color: transparent;
+    color: #000000;
+    border-color: #d3d3d3;
+    border-radius: 10%;
+    border-style: solid;
+  }
