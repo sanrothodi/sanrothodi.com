@@ -1,3 +1,4 @@
+
 //Collapsible
   var coll = document.getElementsByClassName("collapsible");
   var i;
@@ -14,12 +15,52 @@
     });
   }
 
-//Scroll up
-  var elmnt = document.getElementById("top");
+  //Scroll up
+    var scrollup = document.getElementById("top");
 
-  function scrollToTop() {
-    elmnt.scrollIntoView(true);
-  }
+    function scrollToTop() {
+      scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
+    }
+
+  //Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("gallery");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+
+    window.onclick = function(close) {
+      if (close.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
 
   //Lazyload
     document.addEventListener("DOMContentLoaded", function() {
