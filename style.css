@@ -987,60 +987,7 @@ label.instagram-circle:hover {
   max-height: 30em;
   margin: 0.5em 0.5em;
 }
-/*
-.portfolio-grid:hover{
-    --x: 100%;
-  transition: 1.2s;
-  background: linear-gradient(180deg, rgba(89,130,182,1) 0%, rgba(94,89,182,1) 35%, rgba(89,130,182,1) 100%) var(--x, 0)/ 200%;
-  --x: 100%;
 }
-*/
-}
-
-
-
-
-
-
-
-/*
-body {
-  background: #f06d06;
-  font-size: 80%;
-  padding: 20px;
-}
-
-main {
-  position: relative;
-  background: white;
-  height: 200px;
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
-  resize: both;
-  overflow: auto;
-}
-
-main div {
-  background: black;
-  color: white;
-  width: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
-  resize: both;
-  overflow: auto;
-}
-*/
-
-
-
-
-
-
-
 
 /*Modal*/
 .modal {
@@ -1057,10 +1004,6 @@ main div {
 
 .modal-gallery {
   position: relative;
-/*  left: 50%;
-  top: 50%;
-  transform: translate(-25%, -25%);
-  margin: 6vh 6vw 6vh 6vw;*/
   margin: 2vh auto;
   padding: 0;
   max-width: 100%;
@@ -1075,9 +1018,7 @@ main div {
 }
 
 .modal-image {
-/*  max-width: 86vh;
-max-height: 90vh;*/
-max-height: 94vh;
+  max-height: 94vh;
 }
 
 .close {
