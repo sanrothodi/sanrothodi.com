@@ -2,7 +2,9 @@
 :root {
   --black: #ffffff;
   --grey: #999999;
-  --white: #000000
+  --white: #000000;
+  --white41: rgba(0, 0, 0, 0.41);
+  --white42: rgba(0, 0, 0, 0.42);
 }
 
 body {
@@ -907,7 +909,7 @@ label.instagram-circle:hover {
 }
 
 .image-size:hover {
-  box-shadow: 0.3em 0.3em 0.5em 0 rgba(0, 0, 0, 0.42), 0.4em 0.4em 1em 0 rgba(0, 0, 0, 0.41);
+  box-shadow: 0.3em 0.3em 0.5em 0 var(--white42), 0.4em 0.4em 1em 0 var(--white41);
   margin: 0.3em 0.3em;
 }
 
@@ -997,6 +999,49 @@ label.instagram-circle:hover {
 
 
 
+
+
+
+
+/*
+body {
+  background: #f06d06;
+  font-size: 80%;
+  padding: 20px;
+}
+
+main {
+  position: relative;
+  background: white;
+  height: 200px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+main div {
+  background: black;
+  color: white;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+*/
+
+
+
+
+
+
+
+
 /*Modal*/
 .modal {
   display: none;
@@ -1008,7 +1053,6 @@ label.instagram-circle:hover {
   height: 100%;
   overflow: none;
   background-color: rgba(0, 0, 0, 0.3);
-
 }
 
 .modal-gallery {
@@ -1017,31 +1061,38 @@ label.instagram-circle:hover {
   top: 50%;
   transform: translate(-25%, -25%);
   margin: 6vh 6vw 6vh 6vw;*/
-  margin: 6vh auto;
+  margin: 2vh auto;
   padding: 0;
-  max-width: 90%;
-  max-height: 90vh;
+  max-width: 100%;
+  max-height: 94vh;
+}
+
+.modal > .modal-gallery {
+  transform: translate(-50%, -51%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .modal-image {
 /*  max-width: 86vh;
 max-height: 90vh;*/
-max-height: 90vh;
-
+max-height: 94vh;
 }
 
 .close {
-  color: white;
+  color: var(--black);
   position: absolute;
   top: 10px;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  transition: 0.7s ease;
 }
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: var(--white42);
   text-decoration: none;
   cursor: pointer;
 }
@@ -1058,7 +1109,7 @@ max-height: 90vh;
   width: auto;
   padding: 1em;
   margin-top: -2em;
-  color: white;
+  color: var(--black);
   font-weight: bold;
   font-size: 2em;
   transition: 0.7s ease;
@@ -1074,11 +1125,8 @@ max-height: 90vh;
 
 .prev:hover,
 .next:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--grey);
 }
-
-
-
 
 
 /*Contact*/
