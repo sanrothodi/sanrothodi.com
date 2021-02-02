@@ -62,6 +62,22 @@
     }
 
 
+    /*  function TouchFriendly(n) {
+        var x = n.touches[0].clientX;
+        var y = n.touches[0].clientY;
+        var swipe = document.getElementById("swipeModal");
+      }
+      //Touch Friendly swipe for Modal
+        function TouchFriendly() {
+          var swipe = document.getElementById("swipeModal");
+          swipe.addEventListener("touchstart", handleStart, false);
+          swipe.addEventListener("touchend", handleEnd, false);
+          swipe.addEventListener("touchmove", handleMove, false);
+        }
+
+        document.addEventListener("DOMContentLoaded", TouchFriendly);
+      */
+
   //Lazyload
     document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;
