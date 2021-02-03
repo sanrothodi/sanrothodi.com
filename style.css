@@ -826,7 +826,30 @@ label.instagram-circle:hover {
   position: relative;
   padding: 15em 0 0 0;
 }
-
+/*
+.scrollup1-desktop {
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 100px;
+  padding: 0;
+}
+.scrollup1 {
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 100px;
+  padding: 0;
+  max-height: 2.5em;
+  max-width: 2.5em;
+  margin: 1em;
+  background: var(--grey);
+  border-color: var(--grey);
+  border-radius: 50%;
+  fill: var(--black);
+  viewBox:-2.5 -2.5 22 22;
+}
+*/
 .floating-footer {
   display: none;
 }
