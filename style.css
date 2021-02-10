@@ -450,7 +450,7 @@ label.instagram-circle:hover {
   display: none;
 }
 
-@media only screen and (min-width: 981px) {
+@media only screen and (min-width: 1020px) {
 .navbar {
   display: none;
 }
@@ -901,13 +901,7 @@ label.instagram-circle:hover {
   height: 100%;
   background: var(--black);
 }
-/*
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(4x auto);
-  flex-flow: row wrap;
-}
-*/
+
 .portfolio {
   display: flex;
   flex-flow: column wrap;
@@ -929,20 +923,19 @@ label.instagram-circle:hover {
   margin: 0.3em 0.3em;
 }
 
-@media only screen and (max-width:980px) {
+@media only screen and (max-width:780px) {
 .portfolio-grid {
   max-width: 100%;
   max-height: 100%;
   padding: 1%;
   object-fit: contain;
 }
-
 }
-/*
-@media screen and (min-width: 641px and max-width:940px) {
+
+@media only screen and (min-width:781px) {
   .gallery-content {
     display: flex;
-    padding: 0 1em 0 0.5em;
+    padding: 1em 2em 0 2em;
     height: 100%;
     background: var(--black);
   }
@@ -951,37 +944,33 @@ label.instagram-circle:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    position: relative;
+    transition: width 0.4s ease-in-out 0.05s;
   }
 
   .portfolio-grid {
-    max-width: 45%;
+    max-width: 100%;
     max-height: 100%;
-    padding: 0.25em 0.25em;
+    padding: 1%;
     object-fit: contain;
   }
 
   .image-size {
-
+    position: relative;
+    max-width: 20em;
+    max-height: 30em;
+    margin: 0.5em 0.5em;
   }
 }
-*/
 
-
-@media screen and (min-width: 981px) {
-
+@media screen and (min-width: 1020px) {
 .gallery-content {
   display: flex;
   padding: 8em 2em 0 12em;
   height: 100%;
   background: var(--black);
 }
-/*
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(4x auto);
-  flex-flow: row wrap;
-}
-*/
+
 .portfolio {
   display: flex;
   flex-flow: row wrap;
