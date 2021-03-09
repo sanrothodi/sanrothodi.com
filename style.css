@@ -1108,22 +1108,29 @@ label.instagram-circle:hover {
     margin: 0 auto;
   }
 
-@media screen and (min-width: 1020px) {
-  .about-page {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 7em 2em 0 6em;
-    height: 100%;
-    background: var(--black);
-    flex: 1 1 auto;
-    max-width: 90%;
-  }
-}
-
   .about-me {
 
   }
 
+  .contact-button-position {
+    padding: 0 1em 0 1em;
+  }
+
+  @media screen and (min-width: 1020px) {
+    .about-page {
+      display: flex;
+      flex-flow: column wrap;
+      padding: 7em 2em 0 6em;
+      height: 100%;
+      background: var(--black);
+      flex: 1 1 auto;
+      max-width: 90%;
+    }
+
+    .contact-button-position {
+      padding: 1em 0 0 0.25em;
+    }
+  }
 
 /*Contact*/
 
@@ -1135,18 +1142,6 @@ label.instagram-circle:hover {
     background: var(--black);
     margin: 0 auto;
   }
-
-@media screen and (min-width: 1020px) {
-  .contact-page {
-    display: flex;
-    flex-flow: column wrap;
-    padding: 7em 2em 0 6em;
-    height: 100%;
-    background: var(--black);
-    flex: 1 1 auto;
-    max-width: 90%;
-  }
-}
 
   .contact-form {
     padding-left: 1em;
@@ -1204,4 +1199,16 @@ label.instagram-circle:hover {
   .submit-button-position {
     padding: 1em 0 0 0.25em;
     width: 100%;
+  }
+
+  @media screen and (min-width: 1020px) {
+    .contact-page {
+      display: flex;
+      flex-flow: column wrap;
+      padding: 7em 2em 0 6em;
+      height: 100%;
+      background: var(--black);
+      flex: 1 1 auto;
+      max-width: 90%;
+    }
   }
