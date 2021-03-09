@@ -37,7 +37,7 @@ a:hover {
 }
 
 h1 {
-  font-family: input mono narrow regular,input mono narrow regular,monospace;
+  font-family: "Input Mono Narrow Regular", "Input Mono Narrow Regular", monospace;
   font-weight: 400;
 }
 
@@ -61,6 +61,28 @@ li {
 
 img {
   vertical-align: middle;
+}
+
+.button {
+  height: 2.9em;
+  width: 7em;
+  background-color: var(--white);
+  color: var(--black);
+  border-color: var(--black);
+  border-radius: 10%;
+  border-style: solid;
+  font-size: 1em;
+}
+
+.button:hover {
+  height: 2.9em;
+  width: 7em;
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--grey);
+  border-radius: 10%;
+  border-style: solid;
+  font-size: 1em;
 }
 
 /*Navbar*/
@@ -1075,6 +1097,34 @@ label.instagram-circle:hover {
 }
 
 
+/*About*/
+
+  .about-page {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 1em 0 1em;
+    height: 100%;
+    background: var(--black);
+    margin: 0 auto;
+  }
+
+@media screen and (min-width: 1020px) {
+  .about-page {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 7em 2em 0 6em;
+    height: 100%;
+    background: var(--black);
+    flex: 1 1 auto;
+    max-width: 90%;
+  }
+}
+
+  .about-me {
+
+  }
+
+
 /*Contact*/
 
   .contact-page {
@@ -1154,26 +1204,4 @@ label.instagram-circle:hover {
   .submit-button-position {
     padding: 1em 0 0 0.25em;
     width: 100%;
-  }
-
-  .submit-button {
-    height: 2.9em;
-    width: 7em;
-    background-color: var(--white);
-    color: var(--black);
-    border-color: var(--black);
-    border-radius: 10%;
-    border-style: solid;
-    font-size: 1em;
-  }
-
-  .submit-button:hover {
-    height: 2.9em;
-    width: 7em;
-    background-color: var(--black);
-    color: var(--white);
-    border-color: var(--grey);
-    border-radius: 10%;
-    border-style: solid;
-    font-size: 1em;
   }
