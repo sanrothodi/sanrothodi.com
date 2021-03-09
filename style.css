@@ -1076,67 +1076,104 @@ label.instagram-circle:hover {
 
 
 /*Contact*/
-  .contact-form {
-    display: grid;
-    grid-template-columns: auto;
-    max-width: 28em;
-    margin-left: auto;
-    margin-right: auto;
+
+  .contact-page {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 1em 0 1em;
+    height: 100%;
+    background: var(--black);
+    margin: 0 auto;
   }
 
-  .name-sidebyside {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 1020px) {
+  .contact-page {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 7em 2em 0 6em;
+    height: 100%;
+    background: var(--black);
+    flex: 1 1 auto;
+    max-width: 90%;
+  }
+}
+
+  .contact-form {
     padding-left: 1em;
-    align-items: center;
+  }
+
+  .contact-me{
+    padding: 0 0 0.2em 0.5em;
   }
 
   .form-name {
-    color: #000000;
-    font-size: 0.8em;
-    font-family: sans-serif;
-    padding: 0.8em;
+    font-size: 1em;
+    padding: 0.8em 0.2em;
   }
 
-  .name-fields {
-    padding: 0.5em;
-    width: 80%;
-  }
-
-  .other-fields {
+  .field {
+    font-size: inherit;
     padding: 0.5em;
     width: 90%;
+    max-width: 40em;
   }
 
-  .other-fields-message {
+  .message-field {
+    font-size: 1em;
     padding: 0.5em;
     width: 90%;
-    height: 12em;
-    background-color: transparent;
-    color: #000000;
-    border-color: #d3d3d3;
+    height: auto;
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--grey);
     border-style: solid;
     resize: none;
+    max-width: 40em;
   }
 
-  .rest-form {
+  .grow-wrap {
     display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    padding-left: 1em;
+  }
+
+  .grow-wrap::after {
+    content: attr(data-replicated-value) " ";
+    white-space: pre-wrap;
+    visibility: hidden;
+  }
+
+  .grow-wrap > textarea {
+    resize: none;
+    overflow: hidden;
+  }
+
+  .grow-wrap > textarea,
+  .grow-wrap::after {
+    grid-area: 1 / 1 / 2 / 2;
   }
 
   .submit-button-position {
-    padding: 1em;
+    padding: 1em 0 0 0.25em;
     width: 100%;
   }
 
   .submit-button {
-    height: 2em;
-    width: 5em;
-    background-color: transparent;
-    color: #000000;
-    border-color: #d3d3d3;
+    height: 2.9em;
+    width: 7em;
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--black);
     border-radius: 10%;
     border-style: solid;
+    font-size: 1em;
+  }
+
+  .submit-button:hover {
+    height: 2.9em;
+    width: 7em;
+    background-color: var(--black);
+    color: var(--white);
+    border-color: var(--grey);
+    border-radius: 10%;
+    border-style: solid;
+    font-size: 1em;
   }

@@ -54,9 +54,9 @@
       <div class="navbar-menu">
         <a href="https://sanrothodi.com/product" class="menu-items item-1">Product</a>
         <a href="https://sanrothodi.com/portrait" class="menu-items item-2">Portrait</a>
-        <a href="https://sanrothodi.com/contact" class="menu-items item-3">Landscape</a>
+        <!-- <a href="https://sanrothodi.com/contact" class="menu-items item-3">Landscape</a> -->
         <a href="https://sanrothodi.com/contact" class="menu-items item-4">Contact</a>
-        <a href="https://sanrothodi.com/about" class="menu-items item-5">About</a>
+        <!-- <a href="https://sanrothodi.com/about" class="menu-items item-5">About</a> -->
       </div>
       <div class="navbar-social-media">
         <ul>
@@ -127,9 +127,9 @@
           <a href="https://sanrothodi.com" class="menu-items item-1">Home</a>
           <a href="https://sanrothodi.com/product" class="menu-items item-2">Product</a>
           <a href="https://sanrothodi.com/portrait" class="menu-items item-3">Portrait</a>
-          <a href="https://sanrothodi.com/contact" class="menu-items item-4">Landscape</a>
+          <!-- <a href="https://sanrothodi.com/contact" class="menu-items item-4">Landscape</a> -->
           <a href="https://sanrothodi.com/contact" class="menu-items item-5">Contact</a>
-          <a href="https://sanrothodi.com/about" class="menu-items item-6">About</a>
+          <!-- <a href="https://sanrothodi.com/about" class="menu-items item-6">About</a> -->
         </div>
         <div class="social-media">
           <ul>
@@ -201,29 +201,27 @@
     </div>
 
     <!--Contact form-->
+    <div class="contact-page">
       <div class="contact-form">
-
+        <h1 class="contact-me">Contact me</h1>
         <form action="https://sanrothodi.com/contact/" method="post" id="contact-form">
-
-          <div  class="name-sidebyside">
-            <div class="form-name" for="name">First Name<span class="required">*</span></div>
-            <div class="form-name" for="name">Last Name <span class="required">*</span></div>
-            <div><input type="text" name="contact-name" class="name-fields" id="contact-name" /></div>
-            <div><input type="text" name="contact-name" class="name-fields" id="contact-lastname" /></div>
-          </div>
-          <div class="rest-form">
-            <div class="form-name" for="name">Email <span class="required">*</span></div>
-            <div><input type="text" name="contact-email" class="other-fields" id="contact-email" /></div>
-            <div class="form-name" label for="name">Subject <span class="required">*</span></div>
-            <div><input type="text" name="contact-website" class="other-fields" id="contact-website" /></div>
-            <div class="form-name" for="contact_msg">Message <span class="required">*</span></div>
-            <div><textarea name="name" name="contact-msg" class="other-fields-message" id="contact-msg" rows="12" cols="100"></textarea></div>
-          </div>
+            <div class="form-name" for="name">Name<span class="required"></span></div>
+            <div><input type="text" name="contact-name" class="field" id="contact-name" /></div>
+            <div class="form-name" for="name">Email <span class="required"></span></div>
+            <div><input type="text" name="contact-email" class="field" id="contact-email" /></div>
+            <div class="form-name" label for="name">Subject <span class="required"></span></div>
+            <div><input type="text" name="contact-website" class="field" id="contact-website" /></div>
+            <div class="form-name" for="contact_msg">Message <span class="required"></span></div>
+            <div class="grow-wrap" ><textarea name="name" name="contact-msg" class="message-field" id="contact-msg" rows="12" cols="100"></textarea></div>
           <div class="submit-button-position"><button class="submit-button" data-callback='onSubmit' data-action='submit'>Send</button></div>
         </form>
       </div>
-
+    </div>
   </div>
+
+<!--onInput="this.parentNode.dataset.replicatedValue = this.value"
+-->
+
 <div class="floating-footer ">
   <div onclick="scrollToTop()">
     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="scrollup" viewBox="-3 -2.5 22 22"> <!-- Old viewBox property value viewBox="0 -2.5 16 22"-->
@@ -252,98 +250,6 @@
       });
     }
 
-
-  //Lazyload
-    document.addEventListener("DOMContentLoaded", function() {
-    var lazyloadImages;
-
-    if ("IntersectionObserver" in window) {
-      lazyloadImages = document.querySelectorAll(".lazy");
-      var imageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            var image = entry.target;
-            image.src = image.dataset.src;
-            image.classList.remove("lazy");
-            imageObserver.unobserve(image);
-          }
-        });
-      });
-
-      lazyloadImages.forEach(function(image) {
-        imageObserver.observe(image);
-      });
-    } else {
-      var lazyloadThrottleTimeout;
-      lazyloadImages = document.querySelectorAll(".lazy");
-
-      function lazyload () {
-        if(lazyloadThrottleTimeout) {
-          clearTimeout(lazyloadThrottleTimeout);
-        }
-
-        lazyloadThrottleTimeout = setTimeout(function() {
-          var scrollTop = window.pageYOffset;
-          lazyloadImages.forEach(function(img) {
-              if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-              }
-          });
-          if(lazyloadImages.length == 0) {
-            document.removeEventListener("scroll", lazyload);
-            window.removeEventListener("resize", lazyload);
-            window.removeEventListener("orientationChange", lazyload);
-          }
-        }, 20);
-      }
-
-      document.addEventListener("scroll", lazyload);
-      window.addEventListener("resize", lazyload);
-      window.addEventListener("orientationChange", lazyload);
-    }
-    })
-
-
-  //Modal
-    function openModal() {
-      document.getElementById("myModal").style.display = "block";
-    }
-
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
-
-    var modal = document.getElementById("myModal");
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("gallery");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-    }
-
-    window.onclick = function(close) {
-      if (close.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
   //Scroll up
     var scrollup = document.getElementById("top");
 
@@ -351,6 +257,15 @@
       scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
     }
 
+  //textarea
+    const growers = document.querySelectorAll(".grow-wrap");
+
+    growers.forEach((grower) => {
+      const textarea = grower.querySelector("textarea");
+      textarea.addEventListener("input", () => {
+        grower.dataset.replicatedValue = textarea.value;
+      });
+    });
 
 
   </script>
