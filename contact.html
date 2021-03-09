@@ -260,18 +260,18 @@ if (!empty($_POST)) {
 
         <h1 class="contact-me">Contact me</h1>
 
-        <form  action="/mail_form.php" method="post" id="contact-form">
+        <form  class="kwes-form" action="/mail_form.php" method="post" id="contact-form">
 
-        <!--  <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
+        <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
 
             <div class="form-name" for="name">Name<span class="required"></span></div>
-            <div><input type="text" name="name" class="field" placeholder="So you are...?"/></div>
+            <div><input type="text" name="name" class="field" placeholder="So you are...?" rules="required"/></div>
 
-            <div class="form-name" for="name">Email <span class="required"></span></div>
-            <div><input type="text" name="email" class="field" placeholder="The one you use"/></div>
+            <div class="form-name" for="email">Email <span class="required"></span></div>
+            <div><input type="text" name="email" class="field" placeholder="The one you use" rules="required"/></div>
 
-            <div class="form-name" for="name">Subject <span class="required"></span></div>
-            <div><input type="text" name="subject" class="field" placeholder="What's up?"/></div>
+            <div class="form-name" for="subject">Subject <span class="required"></span></div>
+            <div><input type="text" name="subject" class="field" placeholder="What's up?" rules="required"/></div>
 
             <div class="form-name" for="message">Message <span class="required"></span></div>
             <div class="grow-wrap" ><textarea name="message" class="message-field" id="message" rows="12" cols="100" placeholder="Tell me more" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea></div>
@@ -281,6 +281,8 @@ if (!empty($_POST)) {
         </form>
       </div>
     </div>
+
+
   </div>
 
 <div class="floating-footer ">
