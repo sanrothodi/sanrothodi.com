@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!--
 <?php
 
 $errors = [];
@@ -51,6 +51,7 @@ if (!empty($_POST)) {
 }
 
 ?>
+-->
 
 <html>
 
@@ -261,7 +262,7 @@ if (!empty($_POST)) {
 
         <form  action="/mail_form.php" method="post" id="contact-form">
 
-          <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
+        <!--  <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
 
             <div class="form-name" for="name">Name<span class="required"></span></div>
             <div><input type="text" name="name" class="field" placeholder="So you are...?"/></div>
