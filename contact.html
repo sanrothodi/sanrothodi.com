@@ -4,6 +4,7 @@
 
 $errors = [];
 $errorMessage = '';
+$successMessage = '';
 
 if (!empty($_POST)) {
     $name = $_POST['name'];
@@ -39,7 +40,7 @@ if (!empty($_POST)) {
         $body = join(PHP_EOL, $bodyParagraphs);
 
         if (mail($toEmail, $emailSubject, $body, $headers)) {
-            header('Location: thank-you.html');
+            $successMessage = 'Thanks for contacting me, I will reply ASAP';
         } else {
             $errorMessage = 'Oops, something went wrong. Please try again later or contact me on any of my social media';
         }
