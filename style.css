@@ -1177,6 +1177,8 @@ label.instagram-circle:hover {
 
     .about-image {
       padding: 0 1em 0 0;
+      max-height: 10px;
+      max-width: 10px;
     }
   }
 
