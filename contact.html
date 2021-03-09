@@ -260,18 +260,18 @@ if (!empty($_POST)) {
 
         <h1 class="contact-me">Contact me</h1>
 
-        <form  class="kwes-form" action="/mail_form.php" method="post" id="contact-form">
+        <form  class="kwes-form" action="https://kwes.io/api/foreign/forms/Y2fdOksViwrs7LlVeJmC" method="post" id="contact-form">
 
-        <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
+        <!--  <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
 
             <div class="form-name" for="name">Name<span class="required"></span></div>
-            <div><input type="text" name="name" class="field" placeholder="So you are...?" rules="required"/></div>
+            <div><input type="text" name="name" class="field" placeholder="So you are...?" rules="required|max:255"/></div>
 
             <div class="form-name" for="email">Email <span class="required"></span></div>
-            <div><input type="text" name="email" class="field" placeholder="The one you use" rules="required"/></div>
+            <div><input type="text" name="email" class="field" placeholder="The one you use" rules="required|email|max:255"/></div>
 
             <div class="form-name" for="subject">Subject <span class="required"></span></div>
-            <div><input type="text" name="subject" class="field" placeholder="What's up?" rules="required"/></div>
+            <div><input type="text" name="subject" class="field" placeholder="What's up?" rules="required|max:255"/></div>
 
             <div class="form-name" for="message">Message <span class="required"></span></div>
             <div class="grow-wrap" ><textarea name="message" class="message-field" id="message" rows="12" cols="100" placeholder="Tell me more" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea></div>
@@ -294,8 +294,11 @@ if (!empty($_POST)) {
   <div class="copyright">2021 © Sanro Thodi</div>
 </div>
 
+<!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-<script src="validate.min.js"></script>
+<script src="validate.min.js"></script> -->
+
+<script src="https://kwes.io/v2/kwes-script.js" defer></script>
   <script>
 
   //Collapsible
@@ -332,7 +335,7 @@ if (!empty($_POST)) {
     });
 
   //Contact form validation
-    const constraints = {
+/*    const constraints = {
         name: {
             presence: { allowEmpty: false }
         },
@@ -372,6 +375,8 @@ if (!empty($_POST)) {
             alert(errorMessage);
         }
     }, false);
+
+    */
 
   </script>
 </body>
