@@ -22,6 +22,17 @@
       scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
     }
 
+  //Grow wrap for textarea
+    const growers = document.querySelectorAll(".grow-wrap");
+
+    growers.forEach((grower) => {
+      const textarea = grower.querySelector("textarea");
+      textarea.addEventListener("input", () => {
+        grower.dataset.replicatedValue = textarea.value;
+      });
+    });
+
+
   //Modal
     function openModal() {
       document.getElementById("myModal").style.display = "block";
