@@ -1154,33 +1154,33 @@ label.instagram-circle:hover {
   }
 }
 
-  @media screen and (min-width: 1020px) {
-    .about-page {
-      display: flex;
-      flex-flow: column wrap;
-      padding: 7em 2em 0 13em;
-      height: 100%;
-      background: var(--black);
-      flex: 1 1 auto;
-      max-width: 90%;
-    }
-
-    .about-me {
-      text-align: left;
-    }
-
-    .contact-button-position {
-      padding: 1em 0 0 0.25em;
-      text-align: left;
-    }
-
-    .about-image-size {
-      padding: 0 1em;
-      width: 100%;
-      max-height: 45vh;
-      max-width: 30vh;
-    }
+@media screen and (min-width: 1020px) {
+  .about-page {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 7em 2em 0 13em;
+    height: 100%;
+    background: var(--black);
+    flex: 1 1 auto;
+    max-width: 90%;
   }
+
+  .about-me {
+    text-align: left;
+  }
+
+  .contact-button-position {
+    padding: 1em 0 0 0.25em;
+    text-align: left;
+  }
+
+  .about-image-size {
+    padding: 0 1em;
+    width: 100%;
+    max-height: 60vh;
+    max-width: 40vh;
+  }
+}
 
 /*Contact*/
 
