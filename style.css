@@ -1139,7 +1139,7 @@ label.instagram-circle:hover {
 
   .about-text {
     display: block;
-    padding: 0 1em;
+    padding: 0 1em 0 0;
   }
 
   .about-image {
@@ -1147,8 +1147,7 @@ label.instagram-circle:hover {
   }
 
   .about-image-size {
-    padding: 0 1em;
-    margin: auto;
+    padding: 1em;
     width: 100%;
     max-height: 45vh;
     max-width: 30vh;
@@ -1176,7 +1175,7 @@ label.instagram-circle:hover {
   }
 
   .about-image-size {
-    padding: 0 1em;
+    padding: 1em;
     width: 100%;
     max-height: 60vh;
     max-width: 40vh;
