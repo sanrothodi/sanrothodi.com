@@ -1016,7 +1016,39 @@ label.instagram-circle:hover {
 }
 }
 
+/*Video Gallery*/
+
+@media only screen and (max-width:1019px) {
+  .video-grid {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1%;
+    object-fit: contain;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .video-grid {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1%;
+    object-fit: contain;
+  }
+
+  .video {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
 /*Modal*/
+
 .modal {
   display: none;
   position: fixed;
@@ -1037,6 +1069,13 @@ label.instagram-circle:hover {
   max-height: 94vh;
 }
 
+.video-gallery{
+  position: relative;
+  margin: 2vh auto;
+  padding: 0;
+  max-height: 94vh;
+}
+
 .modal > .modal-gallery {
   transform: translate(-50%, -51%);
   position: absolute;
@@ -1046,6 +1085,10 @@ label.instagram-circle:hover {
 
 .modal-image {
   max-height: 94vh;
+}
+
+.modal-video {
+  width: 94vw;
 }
 
 .close {
