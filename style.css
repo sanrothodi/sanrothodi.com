@@ -63,6 +63,34 @@ img {
   vertical-align: middle;
 }
 
+.cursor {
+    position: fixed;
+    background-color: #e73843;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    z-index: 1;
+    z-index: 10000;
+    transition: .3s cubic-bezier(.75,-1.27,.3,2.33) transform,.2s cubic-bezier(.75,-.27,.3,1.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(1);
+}
+
+.cursor-follower {
+    position: fixed;
+    border: 1px solid #e73843;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    z-index: 1;
+    z-index: 10000;
+    transition: .6s cubic-bezier(.75,-1.27,.3,2.33) transform,.2s cubic-bezier(.75,-.27,.3,1.33) opacity,.2s cubic-bezier(.75,-.27,.3,1.33) background;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(2px,2px);
+}
+
 .button {
   height: 2.9em;
   width: 7em;
@@ -1019,7 +1047,7 @@ label.instagram-circle:hover {
 /*Video Gallery*/
 
 @media only screen and (max-width:890px) {
-  
+
   .video-portfolio {
     display: flex;
     flex-flow: row wrap;

@@ -32,8 +32,7 @@
 </head>
 
 <body id="top" class="body">
-<div class="cursor" style=""></div>
-<div class="cursor-follower" style=""></div>
+
   <!--Navbar-->
   <div class="navbar">
     <div class="navbar-logo">
@@ -52,8 +51,8 @@
         <a href="https://sanrothodi.com" class="menu-items item-1">Home</a>
         <a href="https://sanrothodi.com/portrait" class="menu-items item-2">Portrait</a>
         <a href="https://sanrothodi.com/product" class="menu-items item-3">Product</a>
-        <!-- <a href="https://sanrothodi.com/video" class="menu-items item-4">Video</a> -->
-        <a href="https://sanrothodi.com/contact" class="menu-items item-5">Contact</a>
+        <a href="https://sanrothodi.com/contact" class="menu-items item-4">Contact</a>
+        <a href="https://sanrothodi.com/about" class="menu-items item-5">About</a>
       </div>
       <div class="navbar-social-media">
         <ul>
@@ -124,7 +123,7 @@
           <a href="https://sanrothodi.com" class="menu-items item-1">Home</a>
           <a href="https://sanrothodi.com/portrait" class="menu-items item-2">Portrait</a>
           <a href="https://sanrothodi.com/product" class="menu-items item-3">Product</a>
-          <!-- <a href="https://sanrothodi.com/video" class="menu-items item-4">Video</a> -->
+          <a href="https://sanrothodi.com/video" class="menu-items item-4">Video</a>
           <a href="https://sanrothodi.com/contact" class="menu-items item-5">Contact</a>
           <a href="https://sanrothodi.com/about" class="menu-items item-6">About</a>
         </div>
@@ -192,45 +191,52 @@
             <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
           </svg>
         </div>
+
+ <!--
+        <div class="scrollup1-desktop" onclick="scrollToTop()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="scrollup1" viewBox="-3 -2.5 22 22">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+          </svg>
+        </div>
+-->
+
       </header>
 
 
     </div>
 
-
-    <!--About-->
-    <div class="about-page">
-      <div><h1 class="about-me">About</h1></div>
-
-      <div class="about">
-        <div class="about-text">
-          <p>
-          <br />
-          <br />
-          Hi! I'm Sanro, photographer based in London.
-          <br />
-          <br />
-          My photography journey started on the other side of the camera as a model. I love tech, so I decided to buy a camera and learn more about photography and editing. And I ended up falling more in love with creating than being the subject of the creation.
-          <br />
-          <br />
-          I was born and raised in Spain, but I moved out as soon as I turned 18. I needed travel to get to know more cultures, ideas and finding things that I was passionate about. I wanted to do something in a creative industry that could allow me to express myself, and being the tech and gear nerd that I am, photography started to call my attention.
-    <!--      <br />
-          <br />
-          My main focus is on product and portrait photography
-        -->
-          </p>
+    <!--Grid-->
+    <div class="gallery-content">
+      <div class="video-portfolio">
+        <div class="video-grid">
+          <video autoplay="" muted="" loop="" class="video" preload="auto" poster="images/video/the-ordinary.jpg" src="images/video/the-ordinary.mp4" onclick="openModal();currentSlide(1)" type="video/mp4">
+          </video>
         </div>
-        <div class="about-image">
-          <img class="about-image-size" src="images/home/about.jpg">
+        <div class="video-grid">
+          <video autoplay="" muted="" loop="" class="video" preload="auto" poster="images/video/drivers-license-cover.jpg" src="images/video/drivers-license-cover.mp4" onclick="openModal();currentSlide(2)" type="video/mp4">
+          </video>
         </div>
       </div>
-
-      <div class="contact-button-position">
-        <a href="contact.html"><button class="button">Contact</button></a>
-      </div>
-
     </div>
 
+    <!--Modal-->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div id="swipeModal" class="modal-gallery">
+
+        <div class="video-gallery">
+          <video class="modal-video" preload="auto" src="images/video/the-ordinary.mp4" type="video/mp4" controls>
+          </video>
+        </div>
+        <div class="video-gallery">
+          <video class="modal-video" preload="auto" src="images/video/drivers-license-cover.mp4" type="video/mp4" controls>
+          </video>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
 
   </div>
 <div class="floating-footer ">
@@ -242,6 +248,7 @@
   <div class="copyright">2021 © Sanro Thodi</div>
 </div>
 
+<a href="/sanrothodi.asc">PGP public key</a> fingerprint: C4FB DDC1 6A26 2672 920D  0A0F C132 3A37 7DE1 4C8B
 
   <script>
 
@@ -261,14 +268,56 @@
       });
     }
 
+  //Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("video-gallery");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+
+  //  var video = currentSlide(n);
+  //  document.getElementsByClassName('modal-video').pause();
+  //  document.getElementsByClassName('modal-video').muted();
+
+    window.onclick = function(close) {
+      if (close.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+
   //Scroll up
     var scrollup = document.getElementById("top");
 
     function scrollToTop() {
       scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
     }
-
-
 
   </script>
 </body>
