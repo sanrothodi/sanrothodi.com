@@ -212,10 +212,6 @@
           <video autoplay="" muted="" loop="" class="video" preload="auto" poster="images/video/the-ordinary.jpg" src="images/video/the-ordinary.mp4" onclick="openModal();currentSlide(1)" type="video/mp4">
           </video>
         </div>
-        <div class="video-grid">
-          <video autoplay="" muted="" loop="" class="video" preload="auto" poster="images/video/drivers-license-cover.jpg" src="images/video/drivers-license-cover.mp4" onclick="openModal();currentSlide(2)" type="video/mp4">
-          </video>
-        </div>
       </div>
     </div>
 
