@@ -63,6 +63,10 @@ img {
   vertical-align: middle;
 }
 
+.hidden {
+  display: none;
+}
+
 .cursor {
     position: fixed;
     background-color: #e73843;
