@@ -89,6 +89,38 @@
         document.addEventListener("DOMContentLoaded", TouchFriendly);
       */
 
+
+  // Stop video playback when not visible in viewport
+    let options = {
+      root: null,
+      rootMargin: '20px',
+      threshold:1.0
+    };
+    let callback = (entries, observer)=>{
+      entries.forEach(entry => {
+        if(entry.target.id == 'video-01', 'video-02', 'video-03', 'video-04', 'video-05', 'video-06', 'video-07', 'video-08')
+        {
+          if(entry.isIntersecting){
+            entry.target.play();
+          }
+          else{
+            entry.target.pause();
+          }
+        }
+      });
+    }
+
+    let observer = new IntersectionObserver(callback, options);
+    observer.observe(document.querySelector('#video-01'));
+    observer.observe(document.querySelector('#video-02'));
+    observer.observe(document.querySelector('#video-03'));
+    observer.observe(document.querySelector('#video-04'));
+    observer.observe(document.querySelector('#video-05'));
+    observer.observe(document.querySelector('#video-06'));
+    observer.observe(document.querySelector('#video-07'));
+    observer.observe(document.querySelector('#video-08'));
+
+
   //Lazyload
     document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;
