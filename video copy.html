@@ -192,14 +192,6 @@
           </svg>
         </div>
 
- <!--
-        <div class="scrollup1-desktop" onclick="scrollToTop()">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="scrollup1" viewBox="-3 -2.5 22 22">
-            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-          </svg>
-        </div>
--->
-
       </header>
 
 
@@ -209,32 +201,21 @@
     <div class="gallery-content">
       <div class="video-portfolio">
         <div class="video-grid">
-          <video autoplay="" muted="" loop="" class="video" preload="auto" poster="images/video/the-ordinary.jpg" src="images/video/the-ordinary.mp4" onclick="openModal();currentSlide(1)" type="video/mp4">
+          <video controls muted loop id="video-01" class="video" poster="images/video/the-ordinary.jpg" src="images/video/the-ordinary.mp4" type="video/mp4">
           </video>
         </div>
         <div class="video-grid">
-          <video autoplay="" muted="" loop="" class="video" preload="auto" poster="images/video/drivers-license-cover.jpg" src="images/video/drivers-license-cover.mp4" onclick="openModal();currentSlide(2)" type="video/mp4">
+          <video controls muted loop id="video-02" class="video" poster="images/video/drivers-license-cover.jpg" src="images/video/drivers-license-cover.mp4" type="video/mp4">
           </video>
         </div>
-      </div>
-    </div>
-
-    <!--Modal-->
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div id="swipeModal" class="modal-gallery">
-
-        <div class="video-gallery">
-          <video class="modal-video" preload="auto" src="images/video/the-ordinary.mp4" type="video/mp4" controls>
+        <div class="video-grid">
+          <video controls muted loop id="video-03" class="video" poster="images/video/the-ordinary.jpg" src="images/video/the-ordinary.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video-gallery">
-          <video class="modal-video" preload="auto" src="images/video/drivers-license-cover.mp4" type="video/mp4" controls>
+        <div class="video-grid">
+          <video controls muted loop id="video-04" class="video" poster="images/video/drivers-license-cover.jpg" src="images/video/drivers-license-cover.mp4" type="video/mp4">
           </video>
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </div>
 
@@ -270,48 +251,36 @@
       });
     }
 
-  //Modal
-    function openModal() {
-      document.getElementById("myModal").style.display = "block";
-    }
 
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
-
-    var modal = document.getElementById("myModal");
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("video-gallery");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+    // Stop video playback when not visible in viewport
+      let options = {
+        root: null,
+        rootMargin: '20px',
+        threshold:1.0
+      };
+      let callback = (entries, observer)=>{
+        entries.forEach(entry => {
+          if(entry.target.id == 'video-01', 'video-02', 'video-03', 'video-04', 'video-05', 'video-06', 'video-07', 'video-08')
+          {
+            if(entry.isIntersecting){
+              entry.target.play();
+            }
+            else{
+              entry.target.pause();
+            }
+          }
+        });
       }
-      slides[slideIndex-1].style.display = "block";
-    }
 
-  //  var video = currentSlide(n);
-  //  document.getElementsByClassName('modal-video').pause();
-  //  document.getElementsByClassName('modal-video').muted();
-
-    window.onclick = function(close) {
-      if (close.target == modal) {
-        modal.style.display = "none";
-      }
-    }
+      let observer = new IntersectionObserver(callback, options);
+      observer.observe(document.querySelector('#video-01'));
+      observer.observe(document.querySelector('#video-02'));
+      observer.observe(document.querySelector('#video-03'));
+      observer.observe(document.querySelector('#video-04'));
+      observer.observe(document.querySelector('#video-05'));
+      observer.observe(document.querySelector('#video-06'));
+      observer.observe(document.querySelector('#video-07'));
+      observer.observe(document.querySelector('#video-08'));
 
 
   //Scroll up
@@ -320,6 +289,9 @@
     function scrollToTop() {
       scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
     }
+
+
+
 
   </script>
 </body>

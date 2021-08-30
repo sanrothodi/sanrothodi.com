@@ -66,7 +66,7 @@ img {
 .hidden {
   display: none;
 }
-
+/*
 .cursor {
     position: fixed;
     background-color: #e73843;
@@ -94,6 +94,7 @@ img {
     pointer-events: none;
     transform: translate(2px,2px);
 }
+*/
 
 .button {
   height: 2.9em;
