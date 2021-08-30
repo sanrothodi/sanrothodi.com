@@ -1076,13 +1076,13 @@ label.instagram-circle:hover {
 @media only screen and (min-width:891px) {
   .video-portfolio {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     position: relative;
   }
 
   .video-grid {
-    max-width: 100%;
+    max-width: 48%;
     max-height: 100%;
     padding: 1%;
     object-fit: contain;
@@ -1118,13 +1118,13 @@ label.instagram-circle:hover {
 @media screen and (min-width:1180px) {
   .video-portfolio {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     position: relative;
   }
 
   .video-grid {
-    max-width: 100%;
+    max-width: 48%;
     max-height: 100%;
     padding: 1%;
     object-fit: contain;
