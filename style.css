@@ -1115,7 +1115,7 @@ label.instagram-circle:hover {
   }
 }
 
-@media screen and (min-width:1180px) {
+@media screen and (min-width:1300px) {
   .video-portfolio {
     display: flex;
     flex-flow: row wrap;
