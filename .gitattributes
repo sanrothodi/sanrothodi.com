@@ -1,2 +1,2 @@
-images/video/drivers-license-cover.mp4 filter=lfs diff=lfs merge=lfs -text
+media/video/drivers-license-cover.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
