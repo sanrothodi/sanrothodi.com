@@ -1122,7 +1122,7 @@ label.instagram-circle:hover {
 @media only screen and (min-width:781px) {
   .gallery-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
     padding: 1em 2em 0 2em;
     height: 100%;
     background: var(--black);
