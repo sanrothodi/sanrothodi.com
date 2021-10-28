@@ -63,6 +63,26 @@ img {
   vertical-align: middle;
 }
 
+.coming-soon {
+  font-size: 7vw;
+  display: block;
+  text-align: center;
+  padding: 30vh 25vw 70vh 25vw;
+}
+
+@media only screen and (min-width: 480px) {
+.coming-soon {
+  font-size: 3.5vw;
+  padding: 30vh 35vw 70vh 35vw;
+}
+}
+
+@media only screen and (min-width: 1020px) {
+  .coming-soon {
+  font-size: 3vw;
+}
+}
+
 .hidden {
   display: none;
 }
