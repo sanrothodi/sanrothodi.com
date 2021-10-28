@@ -980,7 +980,7 @@ label.instagram-circle:hover {
 
 .work {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: wrap;
   justify-content: space-around;
   position: relative;
 }
@@ -1024,7 +1024,7 @@ label.instagram-circle:hover {
 
   .work {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-around;
     position: relative;
     transition: width 0.4s ease-in-out 0.05s;
@@ -1083,6 +1083,7 @@ label.instagram-circle:hover {
 
 .gallery-content {
   display: flex;
+  flex-wrap: wrap; /*disable for more space*/
   padding: 0 1em 0 0.5em;
   height: 100%;
   background: var(--black);
@@ -1121,6 +1122,7 @@ label.instagram-circle:hover {
 @media only screen and (min-width:781px) {
   .gallery-content {
     display: flex;
+    flex-wrap: wrap;
     padding: 1em 2em 0 2em;
     height: 100%;
     background: var(--black);
@@ -1128,7 +1130,7 @@ label.instagram-circle:hover {
 
   .portfolio {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row; /*add wrap for more space*/
     justify-content: space-around;
     position: relative;
     transition: width 0.4s ease-in-out 0.05s;
@@ -1143,8 +1145,8 @@ label.instagram-circle:hover {
 
   .image-size {
     position: relative;
-    max-width: 20em;
-    max-height: 30em;
+    max-width: 40vw; /*20em*/
+    max-height: 60vw; /*30em*/
     margin: 0.5em 0.5em;
   }
 }
@@ -1159,7 +1161,7 @@ label.instagram-circle:hover {
 
 .portfolio {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row; /*add wrap for more space*/
   justify-content: space-around;
   position: relative;
   transition: width 0.4s ease-in-out 0.05s;
@@ -1174,8 +1176,8 @@ label.instagram-circle:hover {
 
 .image-size {
   position: relative;
-  max-width: 20em;
-  max-height: 30em;
+  max-width: 60vw;  /*20em*/
+  max-height: 90vw; /*30em*/
   margin: 0.5em 0.5em;
 }
 }
