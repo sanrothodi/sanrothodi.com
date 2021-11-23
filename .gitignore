@@ -1,6 +1,3 @@
 # Ignoring directories
 # Both the directory itself and its contents will be ignored.
 media/gitignore/
-gitingnore/mail_form.php
-gitingnore/validate.min.js
-gitingnore/video_self-hosted.html
