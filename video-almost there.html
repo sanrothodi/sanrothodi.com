@@ -204,58 +204,34 @@
     <div class="gallery-content">
       <div class="video-portfolio">
         <div class="video-grid">
-
-            <iframe src="https://player.vimeo.com/video/639701861" controls muted loop id="video-01" class="video" poster="" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-
-        </div>
-        <div class="video-grid">
-          <video controls muted loop id="video-02" class="video" poster="media/video/thumbnails/the-ordinary.jpg">
-            <iframe src="https://player.vimeo.com/video/571615352" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <p>Your browser cannot play the provided video file. Please, clear your cookies and update your browser; or use a different web browser to see my work.</p>
-          </video>
-        </div>
-        <div class="video-grid">
-          <video controls muted loop id="video-03" class="video" poster="media/video/thumbnails/the-ordinary.jpg">
+          <iframe src="https://player.vimeo.com/video/639701861" class="video" frameborder="0" allowfullscreen></iframe>
+<!--      <video controls muted loop id="video-01" class="video" poster="media/video/thumbnails/the-ordinary.jpg">
             <source src="media/video/the-ordinary.mp4" type="video/mp4">
             <source src="media/video/the-ordinary.webm" type="video/webm">
             <p>Your browser cannot play the provided video file. Please, clear your cookies and update your browser; or use a different web browser to see my work.</p>
           </video>
+-->
         </div>
         <div class="video-grid">
-          <video controls muted loop id="video-04" class="video" poster="media/video/thumbnails/drivers-license-cover.jpg">
-            <source src="media/video/drivers-license-cover.mp4" type="video/mp4">
-            <source src="media/video/drivers-license-cover.webm" type="video/webm">
-            <p>Your browser cannot play the provided video file. Please, clear your cookies and update your browser; or use a different web browser to see my work.</p>
-          </video>
+          <iframe src="https://player.vimeo.com/video/571615352" class="video" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-grid">
-          <video controls muted loop id="video-05" class="video" poster="media/video/thumbnails/the-ordinary.jpg">
-            <source src="media/video/the-ordinary.mp4" type="video/mp4">
-            <source src="media/video/the-ordinary.webm" type="video/webm">
-            <p>Your browser cannot play the provided video file. Please, clear your cookies and update your browser; or use a different web browser to see my work.</p>
-          </video>
+          <iframe src="https://player.vimeo.com/video/639701861" class="video" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-grid">
-          <video controls muted loop id="video-06" class="video" poster="media/video/thumbnails/drivers-license-cover.jpg">
-            <source src="media/video/drivers-license-cover.mp4" type="video/mp4">
-            <source src="media/video/drivers-license-cover.webm" type="video/webm">
-            <p>Your browser cannot play the provided video file. Please, clear your cookies and update your browser; or use a different web browser to see my work.</p>
-          </video>
+          <iframe src="https://player.vimeo.com/video/571615352" class="video" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-grid">
-          <video controls muted loop id="video-07" class="video" poster="media/video/thumbnails/the-ordinary.jpg">
-            <source src="media/video/the-ordinary.mp4" type="video/mp4">
-            <source src="media/video/the-ordinary.webm" type="video/webm">
-            <p>Your browser cannot play the provided video file. Please, clear your cookies and update your browser; or use a different web browser to see my work.</p>
-          </video>
+          <iframe src="https://player.vimeo.com/video/639701861" class="video" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="video-grid">
-          <video controls muted loop id="video-08" class="video" poster="media/video/thumbnails/drivers-license-cover.jpg">
-            <source src="media/video/drivers-license-cover.mp4" type="video/mp4">
-            <source src="media/video/drivers-license-cover.webm" type="video/webm">
-            <p>Your browser cannot play the provided video file. Please, clear your cookies and update your browser; or use a different web browser to see my work.</p>
-          </video>
+          <iframe src="https://player.vimeo.com/video/571615352" class="video" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-grid">
+          <iframe src="https://player.vimeo.com/video/639701861" class="video" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-grid">
+          <iframe src="https://player.vimeo.com/video/571615352" class="video" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -291,37 +267,6 @@
         }
       });
     }
-
-
-    // Stop video playback when not visible in viewport
-      let options = {
-        root: null,
-        rootMargin: '20px',
-        threshold:1.0
-      };
-      let callback = (entries, observer)=>{
-        entries.forEach(entry => {
-          if(entry.target.id == 'video-01', 'video-02', 'video-03', 'video-04', 'video-05', 'video-06', 'video-07', 'video-08')
-          {
-            if(entry.isIntersecting){
-              entry.target.play();
-            }
-            else{
-              entry.target.pause();
-            }
-          }
-        });
-      }
-
-      let observer = new IntersectionObserver(callback, options);
-      observer.observe(document.querySelector('#video-01'));
-      observer.observe(document.querySelector('#video-02'));
-      observer.observe(document.querySelector('#video-03'));
-      observer.observe(document.querySelector('#video-04'));
-      observer.observe(document.querySelector('#video-05'));
-      observer.observe(document.querySelector('#video-06'));
-      observer.observe(document.querySelector('#video-07'));
-      observer.observe(document.querySelector('#video-08'));
 
 
   //Scroll up
