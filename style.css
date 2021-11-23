@@ -1185,7 +1185,6 @@ label.instagram-circle:hover {
 /*Video Gallery*/
 
 @media only screen and (max-width:890px) {
-
   .video-portfolio {
     display: flex;
     flex-flow: row wrap;
