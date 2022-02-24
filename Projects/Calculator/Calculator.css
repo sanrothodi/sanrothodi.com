@@ -8,12 +8,13 @@ li {
   list-style: none;
 }
 
+ @media only screen and (min-width: 680px) and (device-width: 390px) {
 .calculator {
 height: 100vh;
 margin: 0;
 }
+}
 
- @media only screen and (min-width: 680px) {
   .calculator {
   max-height: 100vh;
   margin: 0;
@@ -22,8 +23,9 @@ margin: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-}
+
 .output {
+  width: 40vw;
   font-size: 150%;
   background-color: whitesmoke;
   padding: 0.5em 0.5em 0em 0.5em;
@@ -31,7 +33,8 @@ margin: 0;
 }
 
 .inputsGrid {
-  height: 100vh;
+  height: 95vh;
+  width: 50vw;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
