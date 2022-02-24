@@ -1,5 +1,7 @@
 console.log("I'm coding, mf!")
 
+
+
 //Collapsible
   var coll = document.getElementsByClassName("collapsible");
 
@@ -113,19 +115,42 @@ for (var i =0; i < renderedContract.length; i++) {
   });
 };
 
+// Export to PDF
+
+import { jsPDF } from "jspdf";
+
+var printPDF = document.getElementById('print-to-pdf');
+
+printPDF.addEventListener('click',
+
+function convertToPDF() {
 
 
+  var doc = new jsPDF();
+  var contractToPrint = document.getElementById('contract-to-pdf').innerHTML;
 
+  // Handler to format the content
+  var formatContent = {
+    '#endofPDF': function (element, renderer) {
+      return true;
+    }
+  };
 
+  // Set source and margins
+  doc.fromHTML(
+    contractToPrint,
+    15,
+    15,
+    {
+      'width': 170,
+      'elementHandlers': formatContent
+    }
+  );
 
-
-
-
-
-
-
-
-
+  // Save the PDF
+  doc.save(nameClient + ' contract.pdf')
+}
+);
 
 
 
