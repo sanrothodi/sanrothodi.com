@@ -1,0 +1,148 @@
+.contract-page, p {
+  font-family: Helvetica;
+  color: #000000;
+  font-size: 14px;
+  display: grid;
+  grid-template-rows: 1fr;
+  line-height: 2em;
+}
+
+.photography-contract {
+  padding: 1em;
+}
+
+.contract-title {
+  padding-left: 1em;
+}
+
+.contract-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.form-style {
+    padding-left: 2em;
+}
+
+.form-field-style {
+  font-size: inherit;
+  width: 90%;
+  max-width: 40em;
+}
+.form-field-style-2 {
+  font-size: inherit;
+  width: 9em;
+  max-width: 40em;
+  margin-right: 2em;
+}
+
+.form-field-style-phone {
+  font-size: inherit;
+  width: 9em;
+  max-width: 40em;
+  margin-right: 2em;
+}
+
+.margin-left {
+  margin-left: 2em;
+}
+
+.contract-button {
+  margin: 3em 2em;
+}
+
+.all-clauses {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+
+.clause {
+  padding: 1em;
+}
+
+.clause-box {
+  width: 100%;
+
+}
+
+.clause-title{
+font-weight: bold;
+
+}
+
+.subclause {
+font-weight: bold;
+padding-left: 2em;
+}
+
+.parties, .parties-signatures {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ width: 100%;
+ padding: 1em 0;
+ align-items: center;
+
+}
+
+#contractor-name, #client-name {
+ display: inline-flex;
+ flex-flow: wrap;
+}
+#contractor-date-signed, #client-date-signed {
+  display: inline-flex;
+  flex-flow: wrap;
+}
+
+.payment-amount {
+  font-weight: bold;
+}
+.bottom {
+  font-size: 12px;
+  display: inline;
+  line-height: 1em;
+}
+
+
+
+
+ /* GB ---------------44" Selected>UK (+44<br/>
+ AD ---------------376">Andorra (+376<br/>
+ BE ---------------32">Belgium (+32<br/>
+ BG ---------------359">Bulgaria (+359<br/>
+ CA ---------------1">Canada (+1<br/>
+ CN ---------------86">China (+86<br/>
+ HR ---------------385">Croatia (+385<br/>
+ FI ---------------358">Finland (+358<br/>
+ FR ---------------33">France (+33<br/>
+ DE ---------------49">Germany (+49<br/>
+ GI ---------------350">Gibraltar (+350<br/>
+ GR ---------------30">Greece (+30<br/>
+ GL ---------------299">Greenland (+299<br/>
+ HK ---------------852">Hong Kong (+852<br/>
+ HU ---------------36">Hungary (+36<br/>
+ IS ---------------354">Iceland (+354<br/>
+ IN ---------------91">India (+91<br/>
+ IE ---------------353">Ireland (+353<br/>
+ IT ---------------39">Italy (+39<br/>
+ JP ---------------81">Japan (+81<br/>
+ LV ---------------371">Latvia (+371<br/>
+ LB ---------------961">Lebanon (+961<br/>
+ LT ---------------370">Lithuania (+370<br/>
+ LU ---------------352">Luxembourg (+352<br/>
+ MT ---------------356">Malta (+356<br/>
+ NL ---------------31">Netherlands (+31<br/>
+ NO ---------------47">Norway (+47<br/>
+ PL ---------------48">Poland (+48<br/>
+ PT ---------------351">Portugal (+351<br/>
+ QA ---------------974">Qatar (+974<br/>
+ RO ---------------40">Romania (+40<br/>
+ RU ---------------7">Russia (+7<br/>
+ SG ---------------65">Singapore (+65<br/>
+ ZA ---------------27">South Africa (+27<br/>
+ ES ---------------34">Spain (+34<br/>
+ SE ---------------46">Sweden (+46<br/>
+ CH ---------------41">Switzerland (+41<br/>
+ US ---------------1">USA (+1<br/> */

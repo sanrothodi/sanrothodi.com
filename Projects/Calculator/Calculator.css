@@ -9,14 +9,20 @@ li {
 }
 
 .calculator {
-  max-width: 4fr;
+height: 100vh;
+margin: 0;
+}
+
+ @media only screen and (min-width: 680px) {
+  .calculator {
+  max-height: 100vh;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+}
 .output {
   font-size: 150%;
   background-color: whitesmoke;
@@ -25,6 +31,7 @@ li {
 }
 
 .inputsGrid {
+  height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
