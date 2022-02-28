@@ -1082,11 +1082,11 @@ label.instagram-circle:hover {
 /*Gallery*/
 
 .gallery-content {
-/*   display: flex;
-  flex-wrap: wrap; /*disable for more space*/ */
-/*   padding: 0 1em 0 0.5em;
+  display: flex;
+  flex-flow: wrap; /*disable for more space*/
+  padding: 0 1em 0 0.5em;
   height: 100%;
-  background: var(--black); */
+  background: var(--black);
 }
 
 .portfolio {
@@ -1155,6 +1155,7 @@ label.instagram-circle:hover {
 @media screen and (min-width: 1020px) {
 .gallery-content {
   display: flex;
+  flex-flow: row wrap;
   padding: 8em 2em 0 12em;
   height: 100%;
   background: var(--black);
@@ -1527,4 +1528,8 @@ label.instagram-circle:hover {
       flex: 1 1 auto;
       max-width: 90%;
     }
+  }
+
+  .new {
+    display: none;
   }
