@@ -117,7 +117,7 @@ for (var i =0; i < renderedContract.length; i++) {
 
 // Export to PDF
 
-import { jsPDF } from "jspdf";
+// import { jsPDF } from "jspdf";
 
 var printPDF = document.getElementById('print-to-pdf');
 
