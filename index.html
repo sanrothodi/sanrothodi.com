@@ -243,31 +243,21 @@
 
   <script>
 
-//   //Collapsible
-//     var coll = document.getElementsByClassName("collapsible");
-//     var i;
+  //Collapsible
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-//     for (i = 0; i < coll.length; i++) {
-//       coll[i].addEventListener("click", function() {
-//         this.classList.toggle("active");
-//         var content = this.nextElementSibling;
-//         if (content.style.maxHeight) {
-//           content.style.maxHeight = null;
-//         } else {
-//           content.style.maxHeight = content.scrollHeight + "px";
-//         }
-//       });
-//     }
-
-// Collapsible new
-let svg = document.getElementsByClassName('collapsible');
-let menu = document.getElementsByClassName("navbar-collapsible");
-
-function() {
-  for (i = 0; i < svg.length; i++){
-    svg[i].onclick = menu.style.maxHeight = 0 ? menu.style.maxHeight = menu.style.scrollHeight : menu.style.maxHeight = 0
-  }
-}
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
 
   //Scroll up
     var scrollup = document.getElementById("top");
