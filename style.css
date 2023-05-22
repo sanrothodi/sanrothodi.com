@@ -1201,9 +1201,14 @@ label.instagram-circle:hover {
     object-fit: contain;
   }
 
-  .video {
+  .video-horizontal {
     width: 92vw;
     height: 51.75vw;
+  }
+
+  .video-vertical {
+    width: 51.75vw;
+    height: 92vw;
   }
 }
 
@@ -1222,9 +1227,14 @@ label.instagram-circle:hover {
     object-fit: contain;
   }
 
-  .video {
+  .video-horizontal {
     width: 92vw;
     height: 51.75vw;
+  }
+
+  .video-vertical {
+    width: 51.75vw;
+    height: 92vw;
   }
 }
 
@@ -1243,9 +1253,14 @@ label.instagram-circle:hover {
     object-fit: contain;
   }
 
-  .video {
+  .video-horizontal {
     width: 64vw;
     height: 36vw;
+  }
+
+  .video-vertical {
+    width: 36vw;
+    height: 64vw;
   }
 }
 
@@ -1264,9 +1279,14 @@ label.instagram-circle:hover {
     object-fit: contain;
   }
 
-  .video {
+  .video-horizontal {
     max-width: 36.8vw;
     max-height: 20.7vw;
+  }
+
+  .video-vertical {
+    width: 20.7vw;
+    height: 36.8vw;
   }
 }
 
