@@ -4,7 +4,6 @@
   --white: hsla(0, 0%, 100%, 1);
   --black: hsla(0, 0%, 0%, 1);
   --dropShadow: hsla(0, 0%, 0%, 0.15);
-  
 }
 
 html,body {
@@ -87,7 +86,7 @@ display: block;
 }
 
 .background-image-contact {
-  background-image: url("media/contact-bg.jpg");
+  background-image: url("media/main/video.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -689,6 +688,7 @@ animation: move-forever4 4s linear infinite;
 }
 
 .home-section-4 {
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -757,7 +757,7 @@ animation: move-forever4 4s linear infinite;
 /* Contact */ 
 
 .contact-section-1 {
-  padding: 6em 3.5vw;
+  padding-bottom: 6em;
 }
 
 .links {
@@ -767,6 +767,7 @@ animation: move-forever4 4s linear infinite;
 @media only screen and (max-width: 1000px) {
   .contact-flex {
       flex-flow: row wrap;
+      margin: 6em 3.5vw 0;
   }
 }
 
@@ -778,6 +779,7 @@ animation: move-forever4 4s linear infinite;
   border-radius: 30px;
   overflow: hidden;
   word-wrap: normal;
+  margin: 6em 7vw 0;
 }
 
 .contact-flex-item {
@@ -907,7 +909,7 @@ animation: move-forever4 4s linear infinite;
 @media only screen and (min-width: 760px) {
 
   .contact-section-1 {
-      padding: 6em 7vw;
+    padding-bottom: 6em;
   }
 
   .contact-flex {
