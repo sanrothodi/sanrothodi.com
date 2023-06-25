@@ -77,7 +77,8 @@ a:hover {
 }
 
 hr.divider-arch {
-  border-top: 1em solid var(--accent);
+  border-top: 20px solid var(--accent);
+  border-bottom: 0px;
 }
 
 /*Background images or videos*/
