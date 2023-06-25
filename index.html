@@ -47,7 +47,7 @@
   
   
   <section class="home-section-1">
-    <header class="header" id="top">
+    <header class="header">
       <img src="media/home/home.jpg" class="background-image" alt=""/>
     <nav>
       <div class="header-mobile">
@@ -62,7 +62,7 @@
           <div class="mobile-navbar">
               <li class="mobile-navbar-item"><a href="/">Home</a></li>
               <li class="mobile-navbar-item"><a href="/videography.html">Portfolio</a></li>
-              <li class="mobile-navbar-item"><a href="#contact" onclick="scrollToContact()">Contact</a></li>
+              <li class="mobile-navbar-item"><a class="scrollContact" onclick="scrollToContact()">Contact</a></li>
               <li class="mobile-navbar-item"><a href="/about.html">About</a></li>
           </div>
       </div>
@@ -75,7 +75,7 @@
               <div class="desktop-navbar">
                   <li class="desktop-navbar-item"><a href="/">Home</a></li>
                   <li class="desktop-navbar-item"><a href="/videography.html">Videography</a></li>
-                  <li class="desktop-navbar-item"><a href="#contact" onclick="scrollToContact()">Contact</a></li>
+                  <li class="desktop-navbar-item"><a class="scrollContact" onclick="scrollToContact()">Contact</a></li>
                   <li class="desktop-navbar-item"><a href="/about.html">About</a></li>
               </div>
           </div>
@@ -190,7 +190,7 @@
           <div class="footer-info">
               <li class="footer-info-item"><h3>Links</h3></li>
               <div class="footer-list">
-              <li class="footer-links"><a href="#contact" onclick="scrollToContact()">Contact</a></li>
+              <li class="footer-links"><a class="scrollContact" onclick="scrollToContact()">Contact</a></li>
               <li class="footer-links"><a href="/about.html">About</a></li> 
               <li class="footer-links"><a href="/videography.html">Videography</a></li>
               <li class="footer-links"><a href="/photography.html">Photography</a></li> 
@@ -236,7 +236,7 @@
     //Scroll up
       var scrollup = document.getElementById("top");
       function scrollToTop() {
-        scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "start"});
+        scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
       }
 
     //Scroll down
