@@ -14,7 +14,10 @@ html {
 body {
   background: var(--black);
   color: var(--grey);
-  font-family: "Input Mono Narrow Regular", "Input Mono Narrow Regular", monospace;
+  font-family: "work-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
   font-size: 16px;
   overflow-x: none;
   position: sticky;
@@ -37,7 +40,7 @@ a:hover {
 }
 
 h1 {
-  font-family: "Input Mono Narrow Regular", "Input Mono Narrow Regular", monospace;
+  font-family: "work-sans", sans-serif;
   font-weight: 400;
 }
 
@@ -86,35 +89,6 @@ img {
 .hidden {
   display: none;
 }
-/*
-.cursor {
-    position: fixed;
-    background-color: #e73843;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    z-index: 1;
-    z-index: 10000;
-    transition: .3s cubic-bezier(.75,-1.27,.3,2.33) transform,.2s cubic-bezier(.75,-.27,.3,1.33) opacity;
-    user-select: none;
-    pointer-events: none;
-    transform: scale(1);
-}
-
-.cursor-follower {
-    position: fixed;
-    border: 1px solid #e73843;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    z-index: 1;
-    z-index: 10000;
-    transition: .6s cubic-bezier(.75,-1.27,.3,2.33) transform,.2s cubic-bezier(.75,-.27,.3,1.33) opacity,.2s cubic-bezier(.75,-.27,.3,1.33) background;
-    user-select: none;
-    pointer-events: none;
-    transform: translate(2px,2px);
-}
-*/
 
 .button {
   height: 2.9em;

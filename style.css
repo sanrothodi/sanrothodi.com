@@ -1,14 +1,3 @@
-/*@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .header-blur-background {
-
-        -webkit-backdrop-filter: blur(2px);
-        backdrop-filter: blur(2px);
-
-    }
-    --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
-    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
-}
-*/
 :root {
   --accent: hsla(9.1, 100%, 40.2%, 1);
   --darkAccent: hsla(9, 80%, 30%, 1);
@@ -31,7 +20,6 @@ html,body {
     overflow-x: hidden; 
 }
 }
-
 
 * {
   font-family: "work-sans", sans-serif;
@@ -64,7 +52,6 @@ a:hover {
   color: var(--black);
   transition: 0.1s ease-out;
   border-bottom: 2px solid var(--black);
-  /* transition: border_anim 0.2s ease-in-out forwards;  */
 }
 
 @keyframes border_anim {
@@ -99,28 +86,12 @@ overflow: hidden;
 display: block;
 }
 
-/* @media (min-aspect-ratio: 16/9){
-  .background-video  {
-      width: 100%;
-      height: auto;
-  }
-}
-
-@media (max-aspect-ratio: 16/9){
-  .background-video  {
-      width: auto;
-      height: 100%;
-  }
-} */
-
 .background-image-contact {
   background-image: url("media/contact-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
 
 
 /* Header phone*/
