@@ -932,7 +932,7 @@ label.instagram-circle:hover {
   border-color: var(--grey);
   border-radius: 50%;
   fill: var(--black);
-  viewBox:-2.5 -2.5 22 22;
+  /* viewBox:-2.5 -2.5 22 22; */
 }
 
 .scrollup:hover {
