@@ -62,7 +62,7 @@
           <div class="mobile-navbar">
               <li class="mobile-navbar-item"><a href="/">Home</a></li>
               <li class="mobile-navbar-item"><a href="/videography.html">Portfolio</a></li>
-              <li class="mobile-navbar-item"><a href="#contact">Contact</a></li>
+              <li class="mobile-navbar-item"><a href="#contact" onclick="scrollToContact()">Contact</a></li>
               <li class="mobile-navbar-item"><a href="/about.html">About</a></li>
           </div>
       </div>
@@ -75,7 +75,7 @@
               <div class="desktop-navbar">
                   <li class="desktop-navbar-item"><a href="/">Home</a></li>
                   <li class="desktop-navbar-item"><a href="/videography.html">Videography</a></li>
-                  <li class="desktop-navbar-item"><a href="#contact">Contact</a></li>
+                  <li class="desktop-navbar-item"><a href="#contact" onclick="scrollToContact()">Contact</a></li>
                   <li class="desktop-navbar-item"><a href="/about.html">About</a></li>
               </div>
           </div>
@@ -189,10 +189,12 @@
       <div class="footer-item">
           <div class="footer-info">
               <li class="footer-info-item"><h3>Links</h3></li>
-              <li class="footer-links"><a href="#contact">Contact</a></li>
+              <div class="footer-list">
+              <li class="footer-links"><a href="#contact" onclick="scrollToContact()">Contact</a></li>
               <li class="footer-links"><a href="/about.html">About</a></li> 
               <li class="footer-links"><a href="/videography.html">Videography</a></li>
-              <li class="footer-links"><a href="/photography.html">Photography</a></li>  
+              <li class="footer-links"><a href="/photography.html">Photography</a></li> 
+            </div>
           </div>
       </div>
       <div onclick="scrollToTop()">
@@ -234,13 +236,13 @@
     //Scroll up
       var scrollup = document.getElementById("top");
       function scrollToTop() {
-        scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
+        scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "start"});
       }
 
     //Scroll down
-      var scrollup = document.getElementById("contact");
+      var scrollContact = document.getElementById("contact");
       function scrollToContact() {
-        scrollup.scrollIntoView({ behavior: 'smooth', block: "start", inline: "nearest"});
+        scrollContact.scrollIntoView({ behavior: 'smooth', block: "start", inline: "start"});
       }
   </script>
 </body>

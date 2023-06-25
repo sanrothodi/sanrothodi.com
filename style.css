@@ -387,9 +387,13 @@ nav {
   text-align: center;
 }
 
-
 .footer-info-item {
   padding:0.1em;
+}
+
+.footer-list {
+  display: flex;
+  flex-flow: column;
 }
 
 .footer-links {
@@ -426,6 +430,12 @@ nav {
       justify-content: flex-end;
       align-items: stretch;
       margin-right: 5em;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-flow: row;
+    gap: 2em;
   }
   
   .footer-item {
