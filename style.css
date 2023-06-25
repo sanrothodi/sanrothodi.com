@@ -18,6 +18,21 @@
   
 }
 
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+@media only screen and (min-width: 760px) {
+  html,body {
+    overflow-x: hidden; 
+}
+}
+
+
 * {
   font-family: "work-sans", sans-serif;
   font-weight: 400;
@@ -62,8 +77,7 @@ a:hover {
 }
 
 hr.divider-arch {
-  border-top: 8px solid var(--accent);
-  border-radius: 5px;
+  border-top: 1em solid var(--accent);
 }
 
 /*Background images or videos*/
@@ -72,7 +86,7 @@ hr.divider-arch {
   overflow: hidden;
 }
 
-.background-video {
+.background-image {
   position: absolute;
 top: 0;
 left: 0;
@@ -264,6 +278,7 @@ nav {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
+      width: 100vw;
   }
 
   .navbar-logo {
@@ -434,7 +449,7 @@ nav {
   border-color: var(--accent);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 760px) {
 
   .footer-social {
       justify-content: flex-end;
@@ -466,7 +481,7 @@ nav {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   
 }
 
@@ -475,7 +490,7 @@ nav {
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
-  padding: 10vh 5vw 10vh;
+  padding: 35% 5vw;
 }
 
 .tagline {
@@ -506,8 +521,14 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 5vh;
   position: relative;
+}
+
+@media screen and (min-width: 760px) {
+  .home-section-2 {
+    padding-top: 0;
+  }
+
 }
 
 .title-home {
@@ -574,18 +595,6 @@ left:0px;
 float:left;
 }
 
-/* .parallax1 > use {
-animation: move-forever1 10s linear infinite;
-&:nth-child(1) {
-  animation-delay: -2s;
-}
-}
-.parallax2 > use {
-animation: move-forever2 8s linear infinite;
-&:nth-child(1) {
-  animation-delay: -2s;
-}
-} */
 .parallax3 > use {
 animation: move-forever3 6s linear infinite;
 &:nth-child(1) {
@@ -598,22 +607,7 @@ animation: move-forever4 4s linear infinite;
   animation-delay: -2s;
 }
 }
-/* @keyframes move-forever1 {
-0% {
-  transform: translate(85px, 0%);
-}
-100% {
-  transform: translate(-90px, 0%);
-}
-}
-@keyframes move-forever2 {
-0% {
-  transform: translate(-90px, 0%);
-}
-100% {
-  transform: translate(85px, 0%);
-}
-} */
+
 @keyframes move-forever3 {
 0% {
   transform: translate(85px, 0%);
@@ -631,22 +625,12 @@ animation: move-forever4 4s linear infinite;
 }
 }
 
-/* .gentle-wave-1 {
-  fill: var(--darkAccent);
-}
-.gentle-wave-2 {
-  fill: var(--accent);
-} */
 .gentle-wave-3 {
   fill: var(--darkAccent);
 }
 .gentle-wave-4 {
   fill: var(--accent);
 }
-
-/* .home-section-3 {
-
-} */
 
 .mission-home {
   display: flex;
@@ -721,9 +705,6 @@ animation: move-forever4 4s linear infinite;
       font-size: 2.5em;
   }
 
-  /* .mission-text-home {
-  } */
-
   .mission-image-home {
       background-image: url("media/mission-image-home.jpg");
       background-size: cover;
@@ -784,19 +765,13 @@ animation: move-forever4 4s linear infinite;
 
 
 .contact-image-home {
-  background-image: url("media/contact-us.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 200px;
-  order: -1; 
+  display: none;
 }
 
 @media only screen and (min-width: 760px) {
-
   .contact-image-home {
-      background-image: url("media/contact-us.jpg");
+    display: block;
+      background-image: url("media/about/about.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -848,6 +823,7 @@ animation: move-forever4 4s linear infinite;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 5vh;
 }
 
 .contact-form {
@@ -947,13 +923,13 @@ animation: move-forever4 4s linear infinite;
 } 
 
 .contact-image {
-  background-image: url("media/contact-us.jpg");
+  background-image: url("media/about/about.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 200px;
-  order: -1; 
+  order: -1;
 }
 
 @media only screen and (min-width: 760px) {
@@ -978,6 +954,7 @@ animation: move-forever4 4s linear infinite;
       flex-flow: row nowrap;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 0;
   }
   
   .contact-form {
@@ -1040,7 +1017,7 @@ animation: move-forever4 4s linear infinite;
   }
 
   .contact-image {
-      background-image: url("media/contact-us.jpg");
+      background-image: url("media/about/about.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
