@@ -92,6 +92,13 @@ display: block;
   background-repeat: no-repeat;
 }
 
+.background-image-about {
+  background-image: url("media/about/about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 /* Header phone*/
 
@@ -938,12 +945,12 @@ animation: move-forever4 4s linear infinite;
       flex-flow: row nowrap;
       align-items: center;
       justify-content: space-between;
-      padding-bottom: 0;
+      padding-bottom: 5vh;
   }
   
   .contact-form {
       padding: 6vw 6vw 0 6vw;
-      max-width: 42vw;
+      max-width: 88vw;
   }
   
   .contact-me{
@@ -1015,15 +1022,18 @@ animation: move-forever4 4s linear infinite;
 
 /* About */
 
-/* .about-section-1 {
-
-} */
+.about-section-1 {
+  padding-bottom: 2vh;
+}
 
 .about-flex {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding: 0;
+  flex-flow: row no-wrap;
+  background-color: var(--white);
+  padding: 0.5em;
+  border-radius: 30px;
+  word-wrap: normal;
+  margin: 90% 3.5vw 0;
 }
 
 .about-flex-item {
@@ -1065,10 +1075,13 @@ animation: move-forever4 4s linear infinite;
   }
 
   .about-flex {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: stretch;
-      padding: 0;
+    display: flex;
+    flex-flow: row no-wrap;
+    background-color: var(--white);
+    padding: 2em;
+    border-radius: 30px;
+    word-wrap: normal;
+    margin: 80% 7vw 0;
   }
 
   .about-image {
@@ -1125,7 +1138,6 @@ animation: move-forever4 4s linear infinite;
 
 .about-us-text {
   font-size: 0.95em;
-  padding-bottom: 2vh;
 }
 
 .about-section-3 {
@@ -1162,10 +1174,6 @@ animation: move-forever4 4s linear infinite;
       justify-content: space-between;
   }
   
-  .about-team {
-      max-width: 45%;
-  }
-
   .about-us-text {
       padding-bottom: 0;
   }
