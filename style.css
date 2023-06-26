@@ -404,7 +404,7 @@ nav {
   font-size: 0.9em;
 }
 
-.scrollup {
+.scrollup-button {
   position: relative;
   justify-content: center;
   max-height: 2.5em;
@@ -417,7 +417,7 @@ nav {
   /* viewBox:-2.5 -2.5 22 22; */
 }
 
-.scrollup:hover {
+.scrollup-button:hover {
   cursor: pointer;
   fill: var(--accent);
   background: var(--white);
