@@ -33,63 +33,6 @@
     });
 
 
-  //Modal
-    function openModal() {
-      document.getElementById("myModal").style.display = "block";
-    }
-
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
-
-    var modal = document.getElementById("myModal");
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("gallery");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-    }
-
-    window.onclick = function(close) {
-      if (close.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-
-    /*  function TouchFriendly(n) {
-        var x = n.touches[0].clientX;
-        var y = n.touches[0].clientY;
-        var swipe = document.getElementById("swipeModal");
-      }
-      //Touch Friendly swipe for Modal
-        function TouchFriendly() {
-          var swipe = document.getElementById("swipeModal");
-          swipe.addEventListener("touchstart", handleStart, false);
-          swipe.addEventListener("touchend", handleEnd, false);
-          swipe.addEventListener("touchmove", handleMove, false);
-        }
-
-        document.addEventListener("DOMContentLoaded", TouchFriendly);
-      */
-
-
   // Stop video playback when not visible in viewport
     let options = {
       root: null,
